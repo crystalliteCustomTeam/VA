@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Building the project...
+      - npm run build
+      - npm run export # For static export
+  post_build:
+    commands:
+      - echo "Post-build: copying files to S3..."
+      - aws s3 sync ./out s3://codepipeline-us-west-1-209605742217/VA-CAL-PIPELINE --delete
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: out
