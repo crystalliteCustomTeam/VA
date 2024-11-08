@@ -74,6 +74,7 @@ const caseStudiesList = [
   }
 ];
 
+
 export default function Page() {
   return (
     <>
