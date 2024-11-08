@@ -1,0 +1,724 @@
+.PrincingSec {
+  background-color: #f7f8f9;
+
+  h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  .PrincingContentRight {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    span {
+
+      font-weight: 500;
+      font-size: 20px;
+      background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-right: 5px;
+    }
+
+    .PrincingSelect {
+      background: #ffffff;
+      border-radius: 81.6667px;
+      border: none;
+      padding: 12px 20px;
+      outline: none;
+      max-width: 240px;
+
+      &:hover,
+      &:focus {
+        outline: none;
+      }
+
+      option {
+        background: #f7f7f7;
+        box-shadow: 9px 20px 30px rgba(157, 164, 168, 0.2);
+        border-radius: 20px;
+      }
+    }
+  }
+
+  .pricing {
+    display: flex;
+    gap: 10px;
+    padding-top: 50px;
+
+    .pricingBox {
+      width: 470px;
+      border: 1px solid rgba(115, 133, 143, 0.13);
+      border-radius: 27px;
+      transition: all 0.3s ease-in-out;
+      /* Adding transition */
+
+      .box {
+        border-bottom: 1px solid rgba(115, 133, 143, 0.13);
+        padding: 25px;
+        transition: background 0.3s ease-in-out;
+        /* Smooth background transition */
+
+        .packageName {
+          background: #EEEEEE;
+          border-radius: 100px;
+          height: 50px;
+          display: inline-flex;
+          justify-content: flex-start;
+          align-items: center;
+          padding: 0px 30px;
+
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 30px;
+          text-transform: capitalize;
+          color: #000000;
+          margin-bottom: 30px;
+        }
+
+        h4 {
+
+          font-style: normal;
+          font-weight: 600;
+          font-size: 40px;
+          line-height: 50px;
+          text-transform: capitalize;
+          margin-bottom: 10px;
+
+
+        }
+
+        p {
+          color: #73858f;
+          margin-bottom: 30px;
+        }
+
+        .buttonCta {
+
+          font-style: normal;
+          font-weight: 600;
+          height: 55px;
+          font-size: 18px;
+          line-height: 16px;
+          text-align: center;
+          letter-spacing: -0.165px;
+          background: #000000;
+          border-radius: 33px;
+          color: #ffffff;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: background 0.3s ease-in-out;
+          /* Smooth background transition */
+
+          &:hover {
+            background: linear-gradient(106.24deg,
+                #ed1919 25.96%,
+                #ffe100 140.6%);
+          }
+        }
+      }
+
+      .pricingList {
+        padding: 25px;
+        margin-bottom: 0;
+
+        li {
+
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 26px;
+          letter-spacing: -0.165px;
+          list-style: none;
+          color: #000000;
+          position: relative;
+          padding-left: 30px;
+          margin-bottom: 20px;
+          transition: color 0.3s ease-in-out;
+          /* Smooth text color transition */
+
+          svg {
+            position: absolute;
+            left: 0px;
+            top: 5px;
+            transform: translate(0px, 0px);
+            width: 15px;
+            transition: all 0.3s ease-in-out;
+            /* Smooth svg transition */
+
+            path {
+              fill: #000;
+              transition: fill 0.3s ease-in-out;
+              /* Smooth fill transition */
+            }
+          }
+        }
+      }
+
+      &:hover {
+        background: #ffffff;
+        box-shadow: 10px 15px 20px rgba(206, 210, 214, 0.25);
+        /* Smooth shadow transition */
+
+        .box {
+          .packageName {
+            background: rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease-in-out;
+          }
+        }
+
+        .pricingList {
+          li {
+            svg {
+              path {
+                fill: #0edc5d;
+                /* Icon color change */
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .PrincingSec {
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    .PrincingContentRight {
+      span {
+        font-size: 18px;
+        margin-right: 10px;
+      }
+
+      .PrincingSelect {
+        padding: 12px 20px;
+        max-width: 240px;
+      }
+    }
+
+    .pricing {
+      padding-top: 45px;
+
+      .pricingBox {
+        width: 470px;
+
+        .box {
+          padding: 25px;
+
+          .packageName {
+            height: 40px;
+            line-height: 50px;
+            padding: 0px 30px;
+            font-size: 18px;
+            margin-bottom: 30px;
+          }
+
+          h4 {
+            font-size: 35px;
+            line-height: 45px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin-bottom: 28px;
+          }
+
+          .buttonCta {
+            height: 50px;
+            font-size: 17px;
+            line-height: 16px;
+          }
+        }
+
+        .pricingList {
+          padding: 25px;
+
+          li {
+            font-size: 17px;
+            line-height: 25px;
+            padding-left: 30px;
+            margin-bottom: 20px;
+
+            svg {
+              position: absolute;
+              left: 0px;
+              top: 5px;
+              transform: translate(0px, 0px);
+              width: 14px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .PrincingSec {
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .PrincingContentRight {
+      span {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+
+      .PrincingSelect {
+        padding: 12px 20px;
+        max-width: 240px;
+      }
+    }
+
+    .pricing {
+      padding-top: 40px;
+
+      .pricingBox {
+        width: 450px;
+
+        .box {
+          padding: 25px;
+
+          .packageName {
+            height: 50px;
+            padding: 0px 30px;
+            font-size: 16px;
+            margin-bottom: 30px;
+          }
+
+          h4 {
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin-bottom: 24px;
+          }
+
+          .buttonCta {
+            height: 45px;
+            font-size: 16px;
+            line-height: 15px;
+          }
+        }
+
+        .pricingList {
+          padding: 25px;
+
+          li {
+            font-size: 16px;
+            line-height: 24px;
+            padding-left: 30px;
+            margin-bottom: 20px;
+
+            svg {
+              position: absolute;
+              left: 0px;
+              top: 5px;
+              transform: translate(0px, 0px);
+              width: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .PrincingSec {
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .PrincingContentRight {
+      span {
+        font-size: 16px;
+        margin-right: 10px;
+      }
+
+      .PrincingSelect {
+        padding: 12px 20px;
+        max-width: 240px;
+      }
+    }
+
+    .pricing {
+      padding-top: 40px;
+
+      .pricingBox {
+        width: 450px;
+
+        .box {
+          padding: 25px;
+
+          .packageName {
+            height: 45px;
+            padding: 0px 30px;
+            font-size: 15px;
+            margin-bottom: 30px;
+          }
+
+          h4 {
+            font-size: 28px;
+            line-height: 36px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin-bottom: 20px;
+          }
+
+          .buttonCta {
+            height: 40px;
+            font-size: 15px;
+            line-height: 14px;
+          }
+        }
+
+        .pricingList {
+          padding: 25px;
+
+          li {
+            font-size: 15px;
+            line-height: 23px;
+            padding-left: 25px;
+            margin-bottom: 20px;
+
+            svg {
+              position: absolute;
+              left: 0px;
+              top: 5px;
+              transform: translate(0px, 0px);
+              width: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .PrincingSec {
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .PrincingContentRight {
+      span {
+        font-size: 15px;
+        margin-right: 10px;
+      }
+
+      .PrincingSelect {
+        padding: 10px 20px;
+        max-width: 200px;
+      }
+    }
+
+    .pricing {
+      padding-top: 30px;
+
+      .pricingBox {
+        width: 400px;
+
+        .box {
+          padding: 20px;
+
+          .packageName {
+            height: 40px;
+            padding: 0px 30px;
+            font-size: 15px;
+            margin-bottom: 25px;
+          }
+
+          h4 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 10px;
+          }
+
+          p {
+            margin-bottom: 15px;
+          }
+
+          .buttonCta {
+            height: 40px;
+            font-size: 15px;
+            line-height: 14px;
+          }
+        }
+
+        .pricingList {
+          padding: 20px;
+
+          li {
+            font-size: 14px;
+            line-height: 20px;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            font-weight: 400;
+
+            svg {
+              position: absolute;
+              left: 0px;
+              top: 5px;
+              transform: translate(0px, 0px);
+              width: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 899px) {
+  .PrincingSec {
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .PrincingContentRight {
+      span {
+        font-size: 15px;
+        margin-right: 10px;
+      }
+
+      .PrincingSelect {
+        padding: 10px 20px;
+        max-width: 200px;
+      }
+    }
+
+    .pricing {
+      padding-top: 30px;
+
+      .pricingBox {
+        width: 400px;
+
+        .box {
+          padding: 20px;
+
+          .packageName {
+            height: 34px;
+            padding: 0px 20px;
+            font-size: 13px;
+            margin-bottom: 20px;
+          }
+
+          h4 {
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 5px;
+          }
+
+          p {
+            margin-bottom: 10px;
+          }
+
+          .buttonCta {
+            height: 35px;
+            font-size: 14px;
+            line-height: 12px;
+          }
+        }
+
+        .pricingList {
+          padding: 20px;
+
+          li {
+            font-size: 13px;
+            line-height: 20px;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-weight: 400;
+
+            svg {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              transform: translate(0px, 0px);
+              width: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .PrincingSec {
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .PrincingContentRight {
+      justify-content: flex-start;
+
+      span {
+        font-size: 15px;
+        margin-right: 10px;
+      }
+
+      .PrincingSelect {
+        padding: 10px 20px;
+        max-width: 200px;
+      }
+    }
+
+    .pricing {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 20px;
+
+      .pricingBox {
+        flex: 0 0 calc(50% - 10px);
+        margin-bottom: 15px;
+
+        .box {
+          padding: 20px;
+
+          .packageName {
+            height: 34px;
+            padding: 0px 20px;
+            font-size: 13px;
+            margin-bottom: 20px;
+          }
+
+          h4 {
+            font-size: 22px;
+            line-height: 32px;
+            margin-bottom: 5px;
+          }
+
+          p {
+            margin-bottom: 10px;
+          }
+
+          .buttonCta {
+            height: 35px;
+            font-size: 14px;
+            line-height: 12px;
+          }
+        }
+
+        .pricingList {
+          padding: 20px;
+
+          li {
+            font-size: 13px;
+            line-height: 20px;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-weight: 400;
+
+            svg {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              transform: translate(0px, 0px);
+              width: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .PrincingSec {
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .PrincingContentRight {
+      justify-content: flex-start;
+
+      span {
+        font-size: 15px;
+        margin-right: 10px;
+      }
+
+      .PrincingSelect {
+        padding: 10px 20px;
+        max-width: 200px;
+      }
+    }
+
+    .pricing {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 10px;
+      gap: 0px;
+
+      .pricingBox {
+        flex: 0 0 calc(100% - 0px);
+        margin-bottom: 15px;
+
+        .box {
+          padding: 20px;
+
+          .packageName {
+            height: 34px;
+            padding: 0px 20px;
+            font-size: 13px;
+            margin-bottom: 20px;
+          }
+
+          h4 {
+            font-size: 28px;
+            line-height: 38px;
+            margin-bottom: 5px;
+          }
+
+          p {
+            margin-bottom: 10px;
+          }
+
+          .buttonCta {
+            height: 35px;
+            font-size: 14px;
+            line-height: 12px;
+          }
+        }
+
+        .pricingList {
+          padding: 20px;
+
+          li {
+            font-size: 13px;
+            line-height: 20px;
+            padding-left: 20px;
+            margin-bottom: 8px;
+            font-weight: 400;
+
+            svg {
+              position: absolute;
+              left: 0px;
+              top: 0px;
+              transform: translate(0px, 0px);
+              width: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

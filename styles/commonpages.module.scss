@@ -1,0 +1,68 @@
+.mainContainer {
+  background-color: #000;
+  padding: 200px 0 100px;
+  margin-bottom: 30px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  a,
+  span,
+  div {
+    color: #fff;
+  }
+
+  h3 {
+    padding-top: 10px;
+  }
+
+  .list {
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .list li {
+    line-height: 1.4rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .mainContainer {
+    padding: 200px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .mainContainer {
+    padding: 150px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .mainContainer {
+    padding: 130px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .mainContainer {
+    padding: 120px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .mainContainer {
+    padding: 110px 0 100px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .mainContainer {
+    padding: 90px 0 100px;
+  }
+}

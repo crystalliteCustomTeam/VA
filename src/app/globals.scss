@@ -1,0 +1,1042 @@
+body {
+  &.active {
+    overflow: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(106.24deg,
+        #ed1919 25.96%,
+        #ffe100 140.6%);
+    outline: 0px solid slategrey;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .container {
+    max-width: 1440px;
+  }
+
+  .modal-backdrop.show {
+    background-color: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(26px) brightness(1.2);
+    -webkit-backdrop-filter: blur(26px) brightness(1.2);
+    opacity: 1;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .p-150 {
+    padding: 150px 0px;
+  }
+
+  .p-100 {
+    padding: 100px 0px;
+  }
+
+  .pt-100 {
+    padding-top: 100px;
+  }
+
+  .pb-100 {
+    padding-bottom: 100px;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 66px;
+    line-height: 80px;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+    span {
+      background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+  }
+
+  h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.165px;
+    color: #000000;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.165px;
+    color: #7c7c7c;
+    margin-bottom: 20px;
+  }
+
+  .tagTitle {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: -0.165px;
+    color: #ed1919;
+    margin-bottom: 10px;
+  }
+
+
+  .readMoreBtn {
+    height: 50px;
+    min-width: 150px;
+    padding: 0px 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s linear;
+    border-radius: 50px;
+    width: 220px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+
+    &.bgColor {
+
+      &:hover {
+        transition: 0.3s linear;
+
+        a,
+        div {
+          color: #ed1919;
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+      border-radius: 64px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      border-radius: 50px;
+      z-index: -1;
+      transition: 0.3s linear;
+    }
+
+    a,
+    div {
+      color: #fff;
+      font-size: 16px;
+      line-height: normal;
+      font-weight: 700;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+
+      span {
+        margin-right: 15px;
+      }
+
+      svg {
+        width: 25px;
+        height: auto;
+      }
+    }
+
+    &:hover {
+      transition: 0.3s linear;
+
+      &::before {
+        content: "";
+        background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+        border-radius: 64px;
+        width: 50px;
+        height: 100%;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        border-radius: 50px;
+        z-index: -1;
+        transition: 0.3s linear;
+      }
+
+      a,
+      div {
+        color: #fff;
+
+        svg {
+          position: absolute;
+          right: 12px;
+        }
+      }
+    }
+  }
+
+  // Common Button
+  .buttonCommon {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(7.5px);
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    position: relative;
+    animation: swingNew 2s infinite ease-in-out;
+
+    &.footerActive {
+      width: 180px;
+      height: 180px;
+
+      a,
+      div {
+        width: 180px;
+        height: 180px;
+      }
+    }
+
+    &.popupActive {
+      width: 300px;
+      height: 300px;
+      margin: auto;
+
+      a,
+      div {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    a,
+    div {
+      height: 110px;
+      width: 110px;
+      display: block;
+      transition: transform 0.4s ease-in-out;
+
+      svg {
+        position: absolute;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: auto;
+      }
+    }
+
+    span {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+      opacity: 0.8;
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+
+    &.loaderCommon {
+      background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+
+      .loading {
+        animation: swing 2s linear infinite;
+        transform-origin: center;
+      }
+
+      @keyframes swing {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    }
+
+    &:hover {
+      animation: none;
+      background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+
+      a,
+      div {
+        transition: transform 0.4s ease-in-out;
+        transform: rotate(-90deg);
+      }
+    }
+
+    @keyframes swingNew {
+
+      0% {
+        transform: rotate(0deg);
+      }
+
+      50% {
+        transform: rotate(-90deg);
+        background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+      }
+
+      100% {
+        transform: rotate(0deg);
+      }
+    }
+  }
+}
+
+.videoModal {
+  &.modal {
+    .modal-dialog {
+      --bs-modal-width: 1000px;
+    }
+  }
+}
+
+.textGradient {
+  background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  body {
+    .container {
+      max-width: 1300px;
+    }
+
+    .p-150 {
+      padding: 120px 0px;
+    }
+
+    .p-100 {
+      padding: 80px 0px;
+    }
+
+    .pt-100 {
+      padding-top: 80px;
+    }
+
+    .pb-100 {
+      padding-bottom: 80px;
+    }
+
+    h1 {
+      font-size: 60px;
+      line-height: 75px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 42px;
+      line-height: 55px;
+      margin-bottom: 35px;
+    }
+
+    h3 {
+      font-size: 35px;
+      line-height: 45px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .tagTitle {
+      font-size: 22px;
+      line-height: 30px;
+    }
+
+    // .readMoreBtn {
+    //   font-size: 18px;
+    //   line-height: 50px;
+    //   height: 50px;
+    //   min-width: 200px;
+    //   padding: 0px 20px;
+
+    //   svg {
+    //     margin-left: 20px;
+    //     width: 26px;
+    //     height: auto;
+    //   }
+    // }
+    .readMoreBtn {
+      height: 50px;
+      padding: 0px 20px;
+      width: 220px;
+
+      a,
+      div {
+        font-size: 15px;
+
+        span {
+          margin-right: 22px;
+        }
+
+        svg {
+          width: 22px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 50px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 14px;
+          }
+        }
+      }
+    }
+
+    .buttonCommon {
+      width: 100px;
+      height: 100px;
+
+      a,
+      div {
+        height: 100px;
+        width: 100px;
+      }
+
+      span {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .videoModal {
+    &.modal {
+      .modal-dialog {
+        --bs-modal-width: 1000px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  body {
+    .container {
+      max-width: 1200px;
+    }
+
+    .p-150 {
+      padding: 100px 0px;
+    }
+
+    .p-100 {
+      padding: 70px 0px;
+    }
+
+    .pt-100 {
+      padding-top: 70px;
+    }
+
+    .pb-100 {
+      padding-bottom: 70px;
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 65px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 40px;
+      line-height: 52px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    .tagTitle {
+      font-size: 20px;
+      line-height: 28px;
+    }
+
+    .readMoreBtn {
+      height: 50px;
+      padding: 0px 20px;
+      width: 220px;
+
+      a,
+      div {
+        font-size: 15px;
+
+        span {
+          margin-right: 22px;
+        }
+
+        svg {
+          width: 22px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 50px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 14px;
+          }
+        }
+      }
+    }
+
+    .buttonCommon {
+      width: 90px;
+      height: 90px;
+
+      a,
+      div {
+        height: 90px;
+        width: 90px;
+      }
+
+      span {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .videoModal {
+    &.modal {
+      .modal-dialog {
+        --bs-modal-width: 900px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  body {
+    .container {
+      max-width: 1050px;
+    }
+
+    .p-150 {
+      padding: 90px 0px;
+    }
+
+    .p-100 {
+      padding: 60px 0px;
+    }
+
+    .pt-100 {
+      padding-top: 60px;
+    }
+
+    .pb-100 {
+      padding-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 45px;
+      line-height: 60px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    .tagTitle {
+      font-size: 19px;
+      line-height: 26px;
+    }
+
+    .readMoreBtn {
+      height: 45px;
+      padding: 0px 20px;
+      width: 200px;
+
+      a,
+      div {
+        font-size: 15px;
+
+        span {
+          margin-right: 22px;
+        }
+
+        svg {
+          width: 22px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 45px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 14px;
+          }
+        }
+      }
+    }
+
+    .buttonCommon {
+      width: 80px;
+      height: 80px;
+
+      &.popupActive {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+
+        a,
+        div {
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      a,
+      div {
+        height: 80px;
+        width: 80px;
+      }
+
+      span {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  .videoModal {
+    &.modal {
+      .modal-dialog {
+        --bs-modal-width: 750px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  body {
+    .container {
+      max-width: 900px;
+    }
+
+    .p-150 {
+      padding: 80px 0px;
+    }
+
+    .p-100 {
+      padding: 50px 0px;
+    }
+
+    .pt-100 {
+      padding-top: 50px;
+    }
+
+    .pb-100 {
+      padding-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 42px;
+      line-height: 57px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 42px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 28px;
+      line-height: 38px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    .tagTitle {
+      font-size: 19px;
+      line-height: 26px;
+    }
+
+    .readMoreBtn {
+      height: 42px;
+      padding: 0px 20px;
+      width: 200px;
+
+      a,
+      div {
+        font-size: 14px;
+
+        span {
+          margin-right: 20px;
+        }
+
+        svg {
+          width: 20px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 42px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 12px;
+          }
+        }
+      }
+    }
+
+    .buttonCommon {
+      width: 70px;
+      height: 70px;
+
+      &.popupActive {
+        width: 170px;
+        height: 170px;
+        margin: auto;
+
+        a,
+        div {
+          width: 170px;
+          height: 170px;
+        }
+      }
+
+      a,
+      div {
+        height: 70px;
+        width: 70px;
+      }
+
+      span {
+        font-size: 13px;
+        line-height: 18px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .videoModal {
+    &.modal {
+      .modal-dialog {
+        --bs-modal-width: 650px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  body {
+    .container {
+      max-width: 96%;
+      margin: auto;
+    }
+
+    .p-150 {
+      padding: 80px 0px;
+    }
+
+    .p-100 {
+      padding: 50px 0px;
+    }
+
+    .pt-100 {
+      padding-top: 50px;
+    }
+
+    .pb-100 {
+      padding-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 23px;
+    }
+
+    .tagTitle {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .readMoreBtn {
+      height: 38px;
+      padding: 0px 10px;
+      width: 180px;
+
+      a,
+      div {
+        font-size: 14px;
+
+        span {
+          margin-right: 20px;
+        }
+
+        svg {
+          width: 17px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 38px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 12px;
+          }
+        }
+      }
+    }
+
+    .buttonCommon {
+      width: 65px;
+      height: 65px;
+
+      &.popupActive {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+
+        a,
+        div {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      a,
+      div {
+        height: 65px;
+        width: 65px;
+      }
+
+      span {
+        font-size: 12px;
+        line-height: 18px;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .videoModal {
+    &.modal {
+      .modal-dialog {
+        --bs-modal-width: 550px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  body {
+    .container {
+      max-width: 100%;
+      margin: auto;
+    }
+
+    .p-150 {
+      padding: 80px 0px;
+    }
+
+    .p-100 {
+      padding: 50px 0px;
+    }
+
+    .pt-100 {
+      padding-top: 50px;
+    }
+
+    .pb-100 {
+      padding-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 35px;
+      line-height: 45px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 28px;
+      line-height: 38px;
+      margin-bottom: 25px;
+    }
+
+    h3 {
+      font-size: 25px;
+      line-height: 35px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 23px;
+    }
+
+    .tagTitle {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .readMoreBtn {
+      height: 38px;
+      padding: 0px 10px;
+      width: 180px;
+
+      a,
+      div {
+        font-size: 14px;
+
+        span {
+          margin-right: 20px;
+        }
+
+        svg {
+          width: 17px;
+        }
+      }
+
+      &:hover {
+        &::before {
+          width: 38px;
+        }
+
+        a,
+        div {
+          svg {
+            right: 12px;
+          }
+        }
+      }
+    }
+
+    .buttonCommon {
+      width: 50px;
+      height: 50px;
+
+      &.popupActive {
+        width: 150px;
+        height: 150px;
+        margin: auto;
+
+        a,
+        div {
+          width: 150px;
+          height: 150px;
+        }
+      }
+
+      a,
+      div {
+        height: 50px;
+        width: 50px;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .videoModal {
+    &.modal {
+      .modal-dialog {
+        --bs-modal-width: 400px;
+      }
+    }
+  }
+}

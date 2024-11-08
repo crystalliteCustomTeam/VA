@@ -1,0 +1,1029 @@
+.portfolioSection {
+  background: #000000;
+
+  .videoLoader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 500px;
+  }
+
+  .tabHeaders {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      height: 60px;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: 70px;
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 60px;
+      text-align: center;
+      color: rgb(255, 255, 255, 0.5);
+      padding: 0px 30px;
+      cursor: pointer;
+
+      &.active {
+        background: linear-gradient(106.24deg, #ed1919 25.96%, #ffe100 140.6%);
+        color: #fff;
+      }
+    }
+  }
+
+  .portfolio {
+    display: block;
+    max-width: 1920px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+
+    .image1 {
+      grid-area: a;
+      height: 480px;
+    }
+
+    .image2 {
+      grid-area: b;
+      height: 480px;
+    }
+
+    .image3 {
+      grid-area: c;
+      height: 350px;
+    }
+
+    .image4 {
+      grid-area: d;
+      height: 350px;
+    }
+
+    .image5 {
+      grid-area: e;
+      height: 700px;
+    }
+
+    .image6 {
+      grid-area: f;
+      height: 480px;
+    }
+
+    .image7 {
+      grid-area: g;
+      height: 480px;
+    }
+
+    .image8 {
+      grid-area: h;
+      height: 610px;
+    }
+
+    .image9 {
+      grid-area: i;
+      height: 700px;
+    }
+
+    .image10 {
+      grid-area: j;
+      height: 350px;
+    }
+
+    .image11 {
+      grid-area: k;
+      height: 350px;
+    }
+
+    .image12 {
+      grid-area: l;
+      height: 480px;
+    }
+
+    .image13 {
+      grid-area: m;
+      height: 480px;
+    }
+
+    .image14 {
+      grid-area: n;
+      height: 610px;
+    }
+
+    .image15 {
+      grid-area: o;
+      height: 350px;
+    }
+
+    .image16 {
+      grid-area: p;
+      height: 350px;
+    }
+
+    .image17 {
+      grid-area: q;
+      height: 700px;
+    }
+
+    .image18 {
+      grid-area: r;
+      height: 480px;
+    }
+
+    .image19 {
+      grid-area: s;
+      height: 480px;
+    }
+
+    .gridContainer {
+      display: grid;
+      grid-template-areas:
+        "a a a b b b"
+        "c c e e e e"
+        "d d e e e e"
+        "f f f g g g"
+        "h h h h h h"
+        "i i i i j j"
+        "i i i i k k"
+        "l l l m m m"
+        "n n n n n n"
+        "o o q q q q"
+        "p p q q q q"
+        "r r r s s s";
+
+      .imageBox {
+        position: relative;
+
+        img {
+          object-fit: cover;
+        }
+
+        &:hover {
+          .bannerContentBox {
+            display: flex;
+          }
+        }
+
+        .bannerContentBox {
+          background: rgba(0, 0, 0, 0.55);
+          height: 100%;
+          width: 100%;
+          display: none;
+          justify-content: center;
+          align-items: end;
+          position: relative;
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          padding: 25px;
+          left: 0px;
+
+          .bannerHeading {
+            flex: 0 0 80%;
+
+            .title {
+              font-size: 22px;
+              font-weight: 600;
+              line-height: 26px;
+              color: #fff;
+              margin-bottom: 5px;
+            }
+
+            p {
+              color: #fff;
+              font-size: 14px;
+              line-height: 18px;
+              margin-bottom: 0px;
+            }
+          }
+
+          .bannerButton {
+            flex: 0 0 20%;
+            display: flex;
+            justify-content: flex-end;
+
+            .buttonSmall {
+              width: 80px;
+              height: 80px;
+
+              a,
+              div {
+                width: 80px;
+                height: 80px;
+
+                svg {
+                  width: 50%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .portfolioSection {
+    .tabHeaders {
+      margin-bottom: 50px;
+
+      li {
+        height: 55px;
+        font-size: 16px;
+        line-height: 55px;
+        padding: 0px 30px;
+      }
+    }
+
+    .portfolio {
+      .image1 {
+        height: 420px;
+      }
+
+      .image2 {
+        height: 420px;
+      }
+
+      .image3 {
+        height: 320px;
+      }
+
+      .image4 {
+        height: 320px;
+      }
+
+      .image5 {
+        height: 640px;
+      }
+
+      .image6 {
+        height: 420px;
+      }
+
+      .image7 {
+        height: 420px;
+      }
+
+      .image8 {
+        height: 550px;
+      }
+
+      .image9 {
+        height: 640px;
+      }
+
+      .image10 {
+        height: 320px;
+      }
+
+      .image11 {
+        height: 320px;
+      }
+
+      .image12 {
+        height: 420px;
+      }
+
+      .image13 {
+        height: 420px;
+      }
+
+      .image14 {
+        height: 550px;
+      }
+
+      .image15 {
+        height: 320px;
+      }
+
+      .image16 {
+        height: 320px;
+      }
+
+      .image17 {
+        height: 640px;
+      }
+
+      .image18 {
+        height: 420px;
+      }
+
+      .image19 {
+        height: 420px;
+      }
+
+      .gridContainer {
+        .imageBox {
+          .bannerContentBox {
+            padding: 25px;
+
+            .bannerHeading {
+              .title {
+                font-size: 20px;
+                line-height: 26px;
+              }
+
+              p {
+                font-size: 13px;
+              }
+            }
+
+            .bannerButton {
+              .buttonSmall {
+                width: 60px;
+                height: 60px;
+
+                a,
+                div {
+                  width: 60px;
+                  height: 60px;
+
+                  svg {
+                    width: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .portfolioSection {
+    .tabHeaders {
+      margin-bottom: 50px;
+
+      li {
+        height: 50px;
+        font-size: 14px;
+        line-height: 50px;
+        padding: 0px 25px;
+      }
+    }
+
+    .portfolio {
+      .image1 {
+        height: 400px;
+      }
+
+      .image2 {
+        height: 400px;
+      }
+
+      .image3 {
+        height: 300px;
+      }
+
+      .image4 {
+        height: 300px;
+      }
+
+      .image5 {
+        height: 600px;
+      }
+
+      .image6 {
+        height: 400px;
+      }
+
+      .image7 {
+        height: 400px;
+      }
+
+      .image8 {
+        height: 510px;
+      }
+
+      .image9 {
+        height: 600px;
+      }
+
+      .image10 {
+        height: 300px;
+      }
+
+      .image11 {
+        height: 300px;
+      }
+
+      .image12 {
+        height: 400px;
+      }
+
+      .image13 {
+        height: 400px;
+      }
+
+      .image14 {
+        height: 510px;
+      }
+
+      .image15 {
+        height: 300px;
+      }
+
+      .image16 {
+        height: 300px;
+      }
+
+      .image17 {
+        height: 600px;
+      }
+
+      .image18 {
+        height: 400px;
+      }
+
+      .image19 {
+        height: 400px;
+      }
+
+      .gridContainer {
+        .imageBox {
+          .bannerContentBox {
+            padding: 25px;
+
+            .bannerHeading {
+              .title {
+                font-size: 20px;
+                line-height: 26px;
+              }
+
+              p {
+                font-size: 13px;
+              }
+            }
+
+            .bannerButton {
+              .buttonSmall {
+                width: 60px;
+                height: 60px;
+
+                a,
+                div {
+                  width: 60px;
+                  height: 60px;
+
+                  svg {
+                    width: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .portfolioSection {
+    .tabHeaders {
+      margin-bottom: 50px;
+
+      li {
+        height: 45px;
+        font-size: 13px;
+        line-height: 45px;
+        padding: 0px 25px;
+      }
+    }
+
+    .portfolio {
+      .image1 {
+        height: 370px;
+      }
+
+      .image2 {
+        height: 370px;
+      }
+
+      .image3 {
+        height: 280px;
+      }
+
+      .image4 {
+        height: 280px;
+      }
+
+      .image5 {
+        height: 560px;
+      }
+
+      .image6 {
+        height: 370px;
+      }
+
+      .image7 {
+        height: 370px;
+      }
+
+      .image8 {
+        height: 480px;
+      }
+
+      .image9 {
+        height: 560px;
+      }
+
+      .image10 {
+        height: 280px;
+      }
+
+      .image11 {
+        height: 280px;
+      }
+
+      .image12 {
+        height: 370px;
+      }
+
+      .image13 {
+        height: 370px;
+      }
+
+      .image14 {
+        height: 480px;
+      }
+
+      .image15 {
+        height: 280px;
+      }
+
+      .image16 {
+        height: 280px;
+      }
+
+      .image17 {
+        height: 560px;
+      }
+
+      .image18 {
+        height: 370px;
+      }
+
+      .image19 {
+        height: 370px;
+      }
+
+      .gridContainer {
+        .imageBox {
+          .bannerContentBox {
+            padding: 20px;
+
+            .bannerHeading {
+              .title {
+                font-size: 18px;
+                line-height: 25px;
+              }
+
+              p {
+                font-size: 12px;
+                line-height: 17px;
+              }
+            }
+
+            .bannerButton {
+              .buttonSmall {
+                width: 60px;
+                height: 60px;
+
+                a,
+                div {
+                  width: 60px;
+                  height: 60px;
+
+                  svg {
+                    width: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .portfolioSection {
+    .tabHeaders {
+      margin-bottom: 50px;
+
+      li {
+        height: 45px;
+        font-size: 12px;
+        line-height: 45px;
+        padding: 0px 25px;
+      }
+    }
+
+    .portfolio {
+      .image1 {
+        height: 340px;
+      }
+
+      .image2 {
+        height: 340px;
+      }
+
+      .image3 {
+        height: 240px;
+      }
+
+      .image4 {
+        height: 240px;
+      }
+
+      .image5 {
+        height: 480px;
+      }
+
+      .image6 {
+        height: 340px;
+      }
+
+      .image7 {
+        height: 340px;
+      }
+
+      .image8 {
+        height: 450px;
+      }
+
+      .image9 {
+        height: 480px;
+      }
+
+      .image10 {
+        height: 240px;
+      }
+
+      .image11 {
+        height: 240px;
+      }
+
+      .image12 {
+        height: 340px;
+      }
+
+      .image13 {
+        height: 340px;
+      }
+
+      .image14 {
+        height: 450px;
+      }
+
+      .image15 {
+        height: 240px;
+      }
+
+      .image16 {
+        height: 240px;
+      }
+
+      .image17 {
+        height: 480px;
+      }
+
+      .image18 {
+        height: 340px;
+      }
+
+      .image19 {
+        height: 340px;
+      }
+
+      .gridContainer {
+        .imageBox {
+          .bannerContentBox {
+            padding: 20px;
+
+            .bannerHeading {
+              .title {
+                font-size: 18px;
+                line-height: 25px;
+              }
+
+              p {
+                font-size: 12px;
+                line-height: 17px;
+              }
+            }
+
+            .bannerButton {
+              .buttonSmall {
+                width: 60px;
+                height: 60px;
+
+                a,
+                div {
+                  width: 60px;
+                  height: 60px;
+
+                  svg {
+                    width: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .portfolioSection {
+    .tabHeaders {
+      margin-bottom: 50px;
+
+      li {
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+        padding: 0px 15px;
+      }
+    }
+
+    .portfolio {
+      .image1 {
+        height: 280px;
+      }
+
+      .image2 {
+        height: 280px;
+      }
+
+      .image3 {
+        height: 200px;
+      }
+
+      .image4 {
+        height: 200px;
+      }
+
+      .image5 {
+        height: 400px;
+      }
+
+      .image6 {
+        height: 280px;
+      }
+
+      .image7 {
+        height: 280px;
+      }
+
+      .image8 {
+        height: 350px;
+      }
+
+      .image9 {
+        height: 400px;
+      }
+
+      .image10 {
+        height: 200px;
+      }
+
+      .image11 {
+        height: 200px;
+      }
+
+      .image12 {
+        height: 280px;
+      }
+
+      .image13 {
+        height: 280px;
+      }
+
+      .image14 {
+        height: 350px;
+      }
+
+      .image15 {
+        height: 200px;
+      }
+
+      .image16 {
+        height: 200px;
+      }
+
+      .image17 {
+        height: 400px;
+      }
+
+      .image18 {
+        height: 280px;
+      }
+
+      .image19 {
+        height: 280px;
+      }
+
+      .gridContainer {
+        .imageBox {
+          .bannerContentBox {
+            padding: 20px;
+
+            .bannerHeading {
+              .title {
+                font-size: 16px;
+                line-height: 23px;
+              }
+
+              p {
+                font-size: 12px;
+                line-height: 17px;
+              }
+            }
+
+            .bannerButton {
+              .buttonSmall {
+                width: 50px;
+                height: 50px;
+
+                a,
+                div {
+                  width: 50px;
+                  height: 50px;
+
+                  svg {
+                    width: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .portfolioSection {
+    .tabHeaders {
+      margin-bottom: 30px;
+
+      li {
+        height: 40px;
+        font-size: 12px;
+        line-height: 40px;
+        padding: 0px 15px;
+      }
+    }
+
+    .portfolio {
+      .image1 {
+        height: 280px;
+      }
+
+      .image2 {
+        height: 280px;
+      }
+
+      .image3 {
+        height: 200px;
+      }
+
+      .image4 {
+        height: 200px;
+      }
+
+      .image5 {
+        height: 400px;
+      }
+
+      .image6 {
+        height: 280px;
+      }
+
+      .image7 {
+        height: 280px;
+      }
+
+      .image8 {
+        height: 350px;
+      }
+
+      .image9 {
+        height: 400px;
+      }
+
+      .image10 {
+        height: 200px;
+      }
+
+      .image11 {
+        height: 200px;
+      }
+
+      .image12 {
+        height: 280px;
+      }
+
+      .image13 {
+        height: 280px;
+      }
+
+      .image14 {
+        height: 350px;
+      }
+
+      .image15 {
+        height: 200px;
+      }
+
+      .image16 {
+        height: 200px;
+      }
+
+      .image17 {
+        height: 400px;
+      }
+
+      .image18 {
+        height: 280px;
+      }
+
+      .image19 {
+        height: 280px;
+      }
+
+      .gridContainer {
+        display: grid;
+        grid-template-areas:
+          "a a a a a a"
+          "b b b b b b"
+          "c c c c c c"
+          "d d d d d d"
+          "e e e e e e"
+          "f f f f f f"
+          "g g g g g g"
+          "h h h h h h"
+          "i i i i i i"
+          "j j j j j j"
+          "k k k k k k"
+          "l l l l l l"
+          "m m m m m m"
+          "n n n n n n"
+          "o o o o o o"
+          "p p p p p p"
+          "q q q q q q"
+          "r r r r r r"
+          "s s s s s s";
+
+        .imageBox {
+          .bannerContentBox {
+            padding: 20px;
+
+            .bannerHeading {
+              .title {
+                font-size: 16px;
+                line-height: 23px;
+              }
+
+              p {
+                font-size: 12px;
+                line-height: 17px;
+              }
+            }
+
+            .bannerButton {
+              .buttonSmall {
+                width: 50px;
+                height: 50px;
+
+                a,
+                div {
+                  width: 50px;
+                  height: 50px;
+
+                  svg {
+                    width: 50%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

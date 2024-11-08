@@ -1,0 +1,131 @@
+.mainBanner {
+  height: 700px;
+  position: relative;
+
+  &::before {
+    content: '';
+    background: rgb(0, 0, 0, .50);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bannerContent {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .servicesButton {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &.contactpage {
+    height: 550px;
+  }
+
+  &.pricingPage {
+    background: #000000;
+    height: 850px;
+  }
+
+  .bannerVideo {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+  .mainBanner {
+    height: 600px;
+
+    &.contactpage {
+      height: 550px;
+    }
+
+    &.pricingPage {
+      height: 850px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+  .mainBanner {
+    height: 570px;
+
+    &.contactpage {
+      height: 500px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+  .mainBanner {
+    height: 570px;
+
+    &.contactpage {
+      height: 500px;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1099px) {
+  .mainBanner {
+    height: 560px;
+
+    &.contactpage {
+      height: 500px;
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+  .mainBanner {
+    height: 700px;
+
+    &.contactpage {
+      height: 400px;
+    }
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 599px) {
+  .mainBanner {
+    height: 100%;
+    padding: 100px 0px 20px;
+
+    img {
+      margin-top: 30px;
+    }
+
+    &.contactpage {
+      height: 400px;
+    }
+
+    &.pricingPage {
+      height: 100%;
+      padding: 100px 0px 20px;
+    }
+
+    .bannerContent {
+      margin-bottom: 25px;
+    }
+
+    .servicesButton {
+      justify-content: flex-start;
+    }
+  }
+}
