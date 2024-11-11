@@ -14,7 +14,7 @@ phases:
   post_build:
     commands:
       - echo "Starting post-build phase: copying files to S3..."
-      - aws s3 sync ./out s3://codepipeline-us-west-1-209605742217/VA-CAL-PIPELINE --delete
+      - aws s3 sync ./.next s3://codepipeline-us-west-1-209605742217/VA-CAL-PIPELINE --delete
       - echo "Files successfully synced to S3."
       - echo "Deploying to EC2..."
       # Copy files to EC2 using pscp with the .ppk key file
