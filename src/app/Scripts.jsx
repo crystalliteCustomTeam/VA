@@ -40,10 +40,10 @@ const Scripts = () => {
 
     return (
         <>
-            <Script>
+            <Script id="one">
                 {`gtag('event', 'conversion', {'send_to': 'AW-10860906782/B05OCOOZ2aUDEJ6S8boo'});`}
             </Script>
-            <Script>
+            <Script id="two">
                 {`gtag('event', 'conversion', {'send_to': 'AW-10860906782/-cBLCMe7q54ZEJ6S8boo'});`}
             </Script>
         </>
