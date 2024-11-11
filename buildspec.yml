@@ -3,19 +3,29 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
+      - echo "Starting install phase..."
       - npm install
   build:
     commands:
-      - echo Building the project...
+      - echo "Starting build phase..."
       - npm run build
-      - npm run export # For static export
+      - npm run export # This exports the Next.js app as static files into the 'out' directory
   post_build:
     commands:
-      - echo "Post-build: copying files to S3..."
+      - echo "Starting post-build phase: copying files to S3..."
       - aws s3 sync ./out s3://codepipeline-us-west-1-209605742217/VA-CAL-PIPELINE --delete
+      - echo "Files successfully synced to S3."
+      - echo "Deploying to EC2..."
+      # Copy files to EC2 using pscp with the .ppk key file
+      - pscp -i "/home/ubuntu/video-animations/VA-California.ppk" -r ./out ec2-user@18.144.89.229:/home/ubuntu/video-animations
+      # SSH into EC2 to restart the application
+      - plink -i "/home/ubuntu/video-animations/VA-California.ppk" ec2-user@18.144.89.229 "cd /home/ubuntu/video-animations && pm2 restart next-app"
 
 artifacts:
   files:
     - '**/*'
   base-directory: out
+
+cache:
+  paths:
+    - node_modules/**/*
