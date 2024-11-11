@@ -10,7 +10,6 @@ phases:
     commands:
       - echo "Starting build phase..."
       - npm run build
-      - npm run export # This exports the Next.js app as static files into the 'out' directory
   post_build:
     commands:
       - echo "Starting post-build phase: copying files to S3..."
