@@ -6,10 +6,6 @@ phases:
     commands:
       - echo "Starting install phase..."
       - npm install
-  pre_build:
-    commands:
-      - echo "Pulling latest code from the repository..."
-      - git pull origin main  # Update 'main' with the branch name you want to pull from
   build:
     commands:
       - echo "Starting build phase..."
