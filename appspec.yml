@@ -1,22 +1,29 @@
 version: 0.0
 os: linux
 
+files:
+  - source: ./.next
+    destination: /home/ubuntu/video-animations
+
 phases:
   install:
     commands:
       - echo "Starting install phase..."
       - npm install
+
   pre_build:
     commands:
       - echo "Pulling latest code from the repository..."
       - git pull origin main  # Update 'main' with the branch name you want to pull from
+
   build:
     commands:
       - echo "Starting build phase..."
       - npm run build
+
   post_build:
     commands:
-      - echo "Starting post-build phase: copying files to S3..."
+      - echo "Starting post-build phase: syncing files to S3..."
       - aws s3 sync ./.next s3://codepipeline-us-west-1-209605742217/VA-CAL-PIPELINE --delete
       - echo "Files successfully synced to S3."
       - echo "Deploying to EC2..."
@@ -25,7 +32,7 @@ phases:
 
       # SSH into EC2 to restart the application
       - plink -i "/home/ubuntu/video-animations/VA-California.ppk" ec2-user@18.144.89.229 "cd /home/ubuntu/video-animations && pm2 restart 1"
-      - echo "All done"
+      - echo "Deployment completed."
 
 artifacts:
   files:
