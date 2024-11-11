@@ -6,6 +6,10 @@ phases:
     commands:
       - echo "Starting install phase..."
       - npm install
+  pre_build:
+    commands:
+      - echo "Pulling latest code from the repository..."
+      - git pull origin main  # Update 'main' with the branch name you want to pull from
   build:
     commands:
       - echo "Starting build phase..."
@@ -19,10 +23,9 @@ phases:
       # Copy files to EC2 using pscp with the .ppk key file
       - pscp -i "/home/ubuntu/video-animations/VA-California.ppk" -r ./.next ec2-user@18.144.89.229:/home/ubuntu/video-animations
 
-
       # SSH into EC2 to restart the application
       - plink -i "/home/ubuntu/video-animations/VA-California.ppk" ec2-user@18.144.89.229 "cd /home/ubuntu/video-animations && pm2 restart 1"
-      - echo "all done"
+      - echo "All done"
 
 artifacts:
   files:
@@ -32,4 +35,3 @@ artifacts:
 cache:
   paths:
     - node_modules/**/*
-
