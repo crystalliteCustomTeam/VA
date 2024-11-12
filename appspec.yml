@@ -1,12 +1,18 @@
 version: 0.0
 os: linux
 files:
-  - source: / 
+  - source: /
     destination: /home/ubuntu/VA/
 hooks:
   BeforeInstall:
-    - location: /home/ubuntu/VA/git-pull.sh
+    - location: /home/ubuntu/VA/stop-application.sh
       timeout: 300
   AfterInstall:
-    - location: /home/ubuntu/VA/build.sh
+    - location: /home/ubuntu/VA/git-pull.sh
+      timeout: 300
+  ApplicationStart:
+    - location: /home/ubuntu/VA/install-and-build.sh
+      timeout: 300
+  ApplicationStop:
+    - location: /home/ubuntu/VA/start-application.sh
       timeout: 300
