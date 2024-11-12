@@ -2,11 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: .next
-    destination: /home/ubuntu/video-animations/.next
+    destination: /home/ubuntu/VA/.next
 
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: scripts/instal=l_dependencies.sh
       timeout: 300
       runas: ec2-user
 
