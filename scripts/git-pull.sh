@@ -9,6 +9,7 @@ git clean -fd
 
 # Optionally, remove specific conflicting files (like banner.module.scss)
 rm -f /home/ubuntu/VA/styles/about/banner.module.scss
+rm -f /home/ubuntu/VA/styles/about/bannerclients.module.scss
 
 
 git pull 
