@@ -1,35 +1,26 @@
 version: 0.0
 os: linux
+files:
+  - source: .next
+    destination: /home/ubuntu/video-animations/.next
 
-phases:
-  install:
-    commands:
-      - echo "Starting install phase..."
-      - cd ./video-animations
-      - npm install
-      - git pull
-  build:
-    commands:
-      - echo "Starting build phase..."
-      - npm run build
-  post_build:
-    commands:
-      - echo "Starting post-build phase: copying files to S3..."
-      - aws s3 sync ./.next s3://codepipeline-us-west-1-209605742217/VA-CAL-PIPELINe --delete
-      - echo "Files successfully synced to S3."
-      - echo "Deploying to EC2..."
-      # Copy files to EC2 using pscp with the .ppk key file
-      - pscp -i "/home/ubuntu/video-animations/VA-California.ppk" -r ./.next ec2-user@18.144.89.229:/home/ubuntu/video-animations/.next
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: ec2-user
 
-      # SSH into EC2 to restart the application
-      - plink -i "/home/ubuntu/video-animations/VA-California.ppk" ec2-user@18.144.89.229 "cd /home/ubuntu/video-animations && pm2 restart 1"
-      - echo "All done"
+  ApplicationStop:
+    - location: scripts/application_stop.sh
+      timeout: 60
+      runas: ec2-user
 
-artifacts:
-  files:
-    - '**/*'
-  base-directory: .next
+  AfterInstall:
+    - location: scripts/sync_s3.sh
+      timeout: 300
+      runas: ec2-user
 
-cache:
-  paths:
-    - node_modules/**/*
+  ApplicationStart:
+    - location: scripts/restart_application.sh
+      timeout: 60
+      runas: ec2-user
