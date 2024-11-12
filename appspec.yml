@@ -1,5 +1,6 @@
 version: 0.0
 os: linux
+overwrite: true
 files:
   - source: /
     destination: /home/ubuntu/VA/
