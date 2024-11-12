@@ -8,19 +8,19 @@ hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
       timeout: 300
-      runas: ec2-user
+      runas: ubuntu
 
   ApplicationStop:
     - location: scripts/application_stop.sh
       timeout: 60
-      runas: ec2-user
+      runas: ubuntu
 
   AfterInstall:
     - location: scripts/sync_s3.sh
       timeout: 300
-      runas: ec2-user
+      runas: ubuntu
 
   ApplicationStart:
     - location: scripts/restart_application.sh
       timeout: 60
-      runas: ec2-user
+      runas: ubuntu
