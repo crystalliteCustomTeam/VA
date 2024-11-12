@@ -5,14 +5,14 @@ files:
     destination: /home/ubuntu/VA/
 hooks:
   BeforeInstall:
-    - location: /home/ubuntu/VA/stop-application.sh
+    - location: scripts/stop-application.sh
       timeout: 300
   AfterInstall:
-    - location: /home/ubuntu/VA/git-pull.sh
+    - location: scripts/git-pull.sh
       timeout: 300
   ApplicationStart:
-    - location: /home/ubuntu/VA/install-and-build.sh
+    - location: scripts/install-and-build.sh
       timeout: 300
   ApplicationStop:
-    - location: /home/ubuntu/VA/start-application.sh
+    - location: scripts/start-application.sh
       timeout: 300
