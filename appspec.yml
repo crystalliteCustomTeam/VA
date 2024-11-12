@@ -6,7 +6,7 @@ files:
 
 hooks:
   BeforeInstall:
-    - location: scripts/instal=l_dependencies.sh
+    - location: scripts/install_dependencies.sh
       timeout: 300
       runas: ec2-user
 
