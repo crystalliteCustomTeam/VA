@@ -10,11 +10,6 @@ hooks:
       timeout: 300
       runas: ubuntu
 
-  ApplicationStop:
-    - location: scripts/application_stop.sh
-      timeout: 60
-      runas: ubuntu
-
   AfterInstall:
     - location: scripts/sync_s3.sh
       timeout: 300
