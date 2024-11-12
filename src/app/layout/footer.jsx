@@ -170,7 +170,7 @@ const Footer = () => {
                     <Row className={`${styles.borderStyle} h-100`} >
                         <Col sm={6} md={6} className="my-auto">
                             <div className={styles.CopyRightBox}>
-                                <div className={styles.txtCopyRight}>© Copyright 2025 - Video Animation </div>
+                                <div className={styles.txtCopyRight}>© Copyright 2024 - Video Animation </div>
                                 <div className={styles.CopyRightLinks}>
                                     <ul>
                                         <li><Link href="/terms-and-conditions">Terms of Use</Link></li>
