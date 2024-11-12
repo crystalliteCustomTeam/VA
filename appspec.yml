@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: .next
-    destination: /home/ubuntu/VA/.next
+    destination: /home/ubuntu/VA/
 
 hooks:
   BeforeInstall:
