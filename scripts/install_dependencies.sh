@@ -1,5 +1,5 @@
 #!/bin/bash
 echo "Starting install phase..."
-cd /home/ubuntu/video-animations
+cd /home/ubuntu/VA
 git pull
 npm install
