@@ -5,6 +5,7 @@ phases:
   install:
     commands:
       - echo "Starting install phase..."
+      - cd ./video-animations
       - npm install
       - git pull
   build:
