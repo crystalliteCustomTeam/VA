@@ -1,21 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: / 
     destination: /home/ubuntu/VA/
-
 hooks:
   BeforeInstall:
-    - location: scripts/install_dependencies.sh
+    - location: /home/ubuntu/VA/git-pull.sh
       timeout: 300
-      runas: ubuntu
-
   AfterInstall:
-    - location: scripts/sync_s3.sh
+    - location: /home/ubuntu/VA/build.sh
       timeout: 300
-      runas: ubuntu
-
-  ApplicationStart:
-    - location: scripts/restart_application.sh
-      timeout: 60
-      runas: ubuntu
