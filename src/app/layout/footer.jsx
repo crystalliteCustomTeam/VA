@@ -145,7 +145,7 @@ const Footer = () => {
                                             </div>
                                             <div>
                                                 <a href="https://maps.app.goo.gl/CuRNM42yybePhmG2A" target="_blank">
-                                                    111 N Orange Ave Suite 800, Orlando, FL 32801, United States
+                                                    900 Balcones Drive, S TE100 Austin, T exas, 78731
                                                 </a>
                                             </div>
                                         </div>
