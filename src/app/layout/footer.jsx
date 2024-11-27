@@ -120,9 +120,9 @@ const Footer = () => {
                                     <div className={`${styles.footerContent} ${styles.mainlinks}`}>
                                         <h6>Contact Info</h6>
                                         <div className={styles.contactInfo} target="_blank">
-                                            <a href="tel:800-253-1448">
+                                            <a href="tel:7163001135">
                                                 <FooterPhone />
-                                                800-253-1448</a>
+                                                (716) 300-1135</a>
                                         </div>
                                         <div className={styles.contactInfo}>
                                             <a href="mailto:queries@videoanimation.us" target="_blank">
