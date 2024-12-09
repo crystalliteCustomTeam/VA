@@ -145,7 +145,7 @@ const Footer = () => {
                                             </div>
                                             <div>
                                                 <a href="https://maps.app.goo.gl/CuRNM42yybePhmG2A" target="_blank">
-                                                    900 Balcones Drive, S TE100 Austin, T exas, 78731
+                                                    5900 Balcones Drive, S TE100 Austin, T exas, 78731
                                                 </a>
                                             </div>
                                         </div>
