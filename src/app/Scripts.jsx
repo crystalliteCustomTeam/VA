@@ -6,13 +6,14 @@ const Scripts = () => {
   useEffect(() => {
     // Load Tawk.to chat script
     const timer = setTimeout(() => {
-      const tawkScript = document.createElement("script")
-      tawkScript.async = true
-      tawkScript.src =
-        "https://embed.tawk.to/66d1ff6150c10f7a00a22440/1i6i4r5nd"
-      tawkScript.charset = "UTF-8"
-      tawkScript.setAttribute("crossorigin", "*")
-      document.body.appendChild(tawkScript)
+      if (typeof window !== 'undefined') {
+        const tawkScript = document.createElement("script");
+        tawkScript.async = true;
+        tawkScript.src = "https://embed.tawk.to/677ef51949e2fd8dfe048301/1ih3uqqt4";
+        tawkScript.charset = "UTF-8";
+        tawkScript.setAttribute("crossorigin", "*");
+        document.body.appendChild(tawkScript);
+      }
     }, 5000)
     //======== Google Tag Manager ========//
     const gtmConfigScript1 = document.createElement("script")
