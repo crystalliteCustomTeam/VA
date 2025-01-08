@@ -14,24 +14,7 @@ const ContactFrom = ({ contact, popup }) => {
   const [error, setError] = useState("")
 
   // Load IP address from the API
-  const getIPData = async () => {
-    try {
-      const response = await fetch("https://ipinfo.io/?token=229b1c3fa2e54c")
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`)
-      }
-      const data = await response.json()
-      setIP(data)
-    } catch (error) {
-      console.error("Error fetching IP data:", error)
-    }
-  }
-
-  useEffect(() => {
-    getIPData()
-    setPagenewurl(window.location.href)
-  }, [])
-
+  
   const router = usePathname()
   const currentRoute = router
 
@@ -57,7 +40,7 @@ const ContactFrom = ({ contact, popup }) => {
     const currentdate = new Date().toLocaleString()
     const data = {
       page_url: pagenewurl,
-      user_ip: ip.ip || "", // Extract only the IP string
+      user_ip: "118.103.235.186", // Extract only the IP string
       lead_data: {
         name,
         email,
@@ -69,20 +52,7 @@ const ContactFrom = ({ contact, popup }) => {
     const JSONdata = JSON.stringify(data)
 
     try {
-      const res = await fetch(
-        "https://brandsapi.pulse-force.com/api/v1/leads",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json, text/plain, */*",
-            "Content-Type": "application/json",
-          },
-          body: JSONdata,
-        }
-      )
-      if (res.status !== 200) {
-        throw new Error(`Failed to submit lead: ${res.status}`)
-      }
+      
       // Prepare and send the fetch request as you have done
       let headersList = {
         Accept: "*/*",
@@ -110,6 +80,23 @@ const ContactFrom = ({ contact, popup }) => {
       setFormStatus("Failed...")
       setIsDisabled(false)
     }
+
+    const res = await fetch(
+      "https://brandsapi.pulse-force.com/api/v1/leads",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSONdata,
+      }
+    )
+    if (res.status !== 200) {
+      throw new Error(`Failed to submit lead: ${res.status}`)
+    }
+
+
   }
 
   return (
