@@ -134,8 +134,8 @@ const Footer = () => {
                                                 <FooterPin />
                                             </div>
                                             <div>
-                                                <a href="https://maps.app.goo.gl/xg38qKz4TR15biea8" target="_blank">
-                                                    106 E 6th St suite 895, Austin, TX 78701, United States
+                                                <a href="https://maps.app.goo.gl/VaY5M98abVx6qsfB6" target="_blank">
+                                                    418 Broadway ste R Albany NY 12207
                                                 </a>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@ const Footer = () => {
                                             </div>
                                             <div>
                                                 <a href="https://maps.app.goo.gl/CuRNM42yybePhmG2A" target="_blank">
-                                                    900 Balcones Drive, S TE100 Austin, T exas, 78731
+                                                    5900 Balcones Drive, S TE100 Austin, T exas, 78731
                                                 </a>
                                             </div>
                                         </div>
