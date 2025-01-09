@@ -52,14 +52,13 @@ const ContactFrom = ({ contact, popup }) => {
     await fetch("api/leads", {
       method: "POST",
       headers: {
-         'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
       body: JSONdata,
     })
 
     try {
       // Prepare and send the fetch request as you have done
-     
 
       let headersList = {
         Accept: "*/*",
@@ -81,6 +80,14 @@ const ContactFrom = ({ contact, popup }) => {
         body: bodyContent,
         headers: headersList,
       })
+      await fetch(
+        "https://api.hsforms.com/submissions/v3/integration/submit/47083847/011ef447-7771-4b56-8014-8004c3cdcc51",
+        {
+          method: "POST",
+          body: bodyContent,
+          headers: headersList,
+        }
+      )
 
       window.location.href = "/thank-you"
     } catch (error) {
@@ -89,7 +96,7 @@ const ContactFrom = ({ contact, popup }) => {
       setIsDisabled(false)
     }
   }
- 
+
   return (
     <Form onSubmit={handleSubmit}>
       <div
