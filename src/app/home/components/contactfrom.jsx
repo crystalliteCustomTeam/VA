@@ -80,13 +80,59 @@ const ContactFrom = ({ contact, popup }) => {
         body: bodyContent,
         headers: headersList,
       })
+      const myHeaders = new Headers()
+      myHeaders.append("Content-Type", "application/json")
+      const raw = JSON.stringify({
+        fields: [
+          {
+            objectTypeId: "0-1",
+            name: "email",
+            value: data.email,
+          },
+          {
+            objectTypeId: "0-1",
+            name: "firstname",
+            value: data.name,
+          },
+          {
+            objectTypeId: "0-1",
+            name: "phone",
+            value: data.phone,
+          },
+          {
+            objectTypeId: "0-1",
+            name: "message",
+            value: data.message,
+          },
+        ],
+        context: {
+          ipAddress: ip.ip,
+          pageUri: pagenewurl,
+          pageName: currentRoute,
+        },
+        legalConsentOptions: {
+          consent: {
+            consentToProcess: true,
+            text: "I agree to allow Example Company to store and process my personal data.",
+            communications: [
+              {
+                value: true,
+                subscriptionTypeId: 999,
+                text: "I agree to receive marketing communications from Example Company.",
+              },
+            ],
+          },
+        },
+      })
+      const requestOptions = {
+        method: "POST",
+        headers: myHeaders,
+        body: raw,
+        redirect: "follow",
+      }
       await fetch(
         "https://api.hsforms.com/submissions/v3/integration/submit/47083847/011ef447-7771-4b56-8014-8004c3cdcc51",
-        {
-          method: "POST",
-          body: bodyContent,
-          headers: headersList,
-        }
+        requestOptions
       )
 
       window.location.href = "/thank-you"
