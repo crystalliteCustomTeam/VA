@@ -6,13 +6,14 @@ const Scripts = () => {
   useEffect(() => {
     // Load Tawk.to chat script
     const timer = setTimeout(() => {
-      if (typeof window !== 'undefined') {
-        const tawkScript = document.createElement("script");
-        tawkScript.async = true;
-        tawkScript.src = "https://embed.tawk.to/677ef51949e2fd8dfe048301/1ih3uqqt4";
-        tawkScript.charset = "UTF-8";
-        tawkScript.setAttribute("crossorigin", "*");
-        document.body.appendChild(tawkScript);
+      if (typeof window !== "undefined") {
+        const tawkScript = document.createElement("script")
+        tawkScript.async = true
+        tawkScript.src =
+          "https://embed.tawk.to/677ef51949e2fd8dfe048301/1ih3uqqt4"
+        tawkScript.charset = "UTF-8"
+        tawkScript.setAttribute("crossorigin", "*")
+        document.body.appendChild(tawkScript)
       }
     }, 5000)
     //======== Google Tag Manager ========//
@@ -44,10 +45,14 @@ const Scripts = () => {
   return (
     <>
       <Script id="one">
-        {`gtag('event', 'conversion', {'send_to': 'AW-10860906782/B05OCOOZ2aUDEJ6S8boo'});`}
+        {`gtag("event", "conversion", {
+          send_to: "AW-10860906782/B05OCOOZ2aUDEJ6S8boo",
+        })`}
       </Script>
       <Script id="two">
-        {`gtag('event', 'conversion', {'send_to': 'AW-10860906782/-cBLCMe7q54ZEJ6S8boo'});`}
+        {`gtag("event", "conversion", {
+          send_to: "AW-10860906782/-cBLCMe7q54ZEJ6S8boo",
+        })`}
       </Script>
     </>
   )

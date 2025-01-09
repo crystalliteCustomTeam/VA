@@ -5,11 +5,12 @@ import { NextResponse } from "next/server"
 export async function POST(request) {
   try {
     const requestBody = await request.json()
-    const { page_url, user_ip, lead_data } = requestBody
-    const { name, email, phone, message } = lead_data
+    const { name, email, phone, message, IP, currentdate, pageUrl } =
+      requestBody
     const mailResponse = await mail({
-      page_url,
-      user_ip,
+      currentdate,
+      pageUrl,
+      IP,
       name,
       email,
       phone,
