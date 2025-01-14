@@ -46,9 +46,9 @@ const Header = () => {
             "/motion-graphics",
             "/video-editing",
             "/logo-animation",
-            "/architectural-visualization",
-            "/cgi-and-vfx",
-            "/infographics",
+            "/3d-architectural-animation",
+            "/cgi-and-vfx-services",
+            "/infographics-designs",
             "/hybrid-&-cel-animations",
         ];
         return submenuPaths.includes(pathname);
@@ -96,8 +96,8 @@ const Header = () => {
 
                                             </li>
                                             <li onClick={toggleMenu} className={pathname === "/pricing" ? styles.active : ""}><Link href="/pricing">Pricing <ArrowBtn /></Link></li>
-                                            <li onClick={toggleMenu} className={pathname === "/about" ? styles.active : ""}><Link href="/about">About Us <ArrowBtn /></Link></li>
-                                            <li onClick={toggleMenu} className={pathname === "/contact" ? styles.active : ""}><Link href="/contact">Contact Us <ArrowBtn /></Link></li>
+                                            <li onClick={toggleMenu} className={pathname === "/about-us" ? styles.active : ""}><Link href="/about-us">About Us <ArrowBtn /></Link></li>
+                                            <li onClick={toggleMenu} className={pathname === "/contact-us" ? styles.active : ""}><Link href="/contact-us">Contact Us <ArrowBtn /></Link></li>
                                         </ul>
                                     </Col>
                                 </Row>

@@ -2,20 +2,20 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "Professional Cel Animation Services ",
-  description: "Get high-quality cel animation services for your project. Skilled animators bring your vision to life with traditional hand-drawn techniques.",
+  title: "Cel Animation Services - Video Animation",
+  description: "Get high-quality Cel animation services for your project. Video Animation Skilled animators bring your vision to life with traditional hand-drawn techniques.",
   //===== OG Tags =====
   openGraph: {
-    title: "Professional Cel Animation Services ",
-    description: "Get high-quality cel animation services for your project. Skilled animators bring your vision to life with traditional hand-drawn techniques.",
-    url: '/cel-animation',
+    title: "Cel Animation Services - Video Animation",
+    description: "Get high-quality Cel animation services for your project. Video Animation Skilled animators bring your vision to life with traditional hand-drawn techniques.",
+    url: 'https://videoanimation.us/cel-animation',
     siteName: 'Video Animations',
     locale: 'en_US',
     type: 'website',
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: '/cel-animation' },
+  alternates: { canonical: 'https://videoanimation.us/cel-animation' },
 }
 
 

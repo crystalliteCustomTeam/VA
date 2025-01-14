@@ -1,5 +1,5 @@
 import { Col, Container, Row } from 'react-bootstrap'
-import styles from "@/styles/about/banner.module.scss"
+import styles from "@/styles/about-us/banner.module.scss"
 import Head from 'next/head'
 
 const Banner = ({ contact, BannerData }) => {

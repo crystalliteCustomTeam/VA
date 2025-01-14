@@ -22,7 +22,7 @@ import Logo19 from "media/home/clientslogo/logo19.webp";
 import Logo20 from "media/home/clientslogo/logo20.webp";
 
 import Image from "next/image";
-import styles from "@/styles/about/bannerclients.module.scss";
+import styles from "@/styles/about-us/bannerclients.module.scss";
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
 

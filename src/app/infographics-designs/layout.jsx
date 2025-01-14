@@ -8,14 +8,14 @@ export const metadata = {
   openGraph: {
     title: "Professional Infographic Design Services | Custom Visuals",
     description: "Transform data into engaging visuals with our infographic design services. We create clear, eye-catching infographics to boost understanding and engagement.",
-    url: '/infographics',
+    url: '/infographics-designs',
     siteName: 'Video Animations',
     locale: 'en_US',
     type: 'website',
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: '/infographics' },
+  alternates: { canonical: '/infographics-designs' },
 }
 
 

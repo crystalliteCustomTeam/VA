@@ -1,7 +1,7 @@
 import { Col, Container, Row } from 'react-bootstrap'
-import styles from "@/styles/about/banner.module.scss"
+import styles from "@/styles/about-us/banner.module.scss"
 import CommonButton from "@/src/app/home/components/commonbutton"
-import IMG from "media/about/banner.png"
+import IMG from "media/about-us/banner.png"
 import Image from 'next/image'
 import Head from 'next/head'
 

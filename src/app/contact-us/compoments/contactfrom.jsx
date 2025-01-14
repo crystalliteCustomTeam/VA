@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
-import styles from "@/styles/contact/contactform.module.scss"
+import styles from "@/styles/contact-us/contactform.module.scss"
 import { ArrowBtn } from "@/src/app/app-constants"
 import { Form } from "react-bootstrap"
 

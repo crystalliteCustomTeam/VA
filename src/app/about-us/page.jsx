@@ -1,9 +1,9 @@
 import { slides, options, ClientsReview, WhyItems, WhyOption } from "@/src/app/home/data/data";
-import { BannerData, list } from "@/src/app/about/data/data";
+import { BannerData, list } from "@/src/app/about-us/data/data";
 
 import WhyChooes from "@/src/app/home/whychoose";
-import Banner from "@/src/app/about/compoments/banner";
-import BannerClients from "@/src/app/about/compoments/bannerclients";
+import Banner from "@/src/app/about-us/compoments/banner";
+import BannerClients from "@/src/app/about-us/compoments/bannerclients";
 import KeyPoints from "@/src/app/home/keypoints";
 import Portfolio from "@/src/app/home/portfolio";
 import Industries from "@/src/app/home/industries";

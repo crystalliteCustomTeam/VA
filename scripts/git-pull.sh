@@ -8,8 +8,8 @@
 # git clean -fd
 
 # # Optionally, remove specific conflicting files (like banner.module.scss)
-# sudo rm -f /home/ubuntu/VA/styles/about/banner.module.scss
-# sudorm -f /home/ubuntu/VA/styles/about/bannerclients.module.scss
+# sudo rm -f /home/ubuntu/VA/styles/about-us/banner.module.scss
+# sudorm -f /home/ubuntu/VA/styles/about-us/bannerclients.module.scss
 
 
 # git pull 

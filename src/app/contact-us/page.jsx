@@ -1,9 +1,9 @@
-import Banner from "@/src/app/contact/compoments/banner";
-import ContactForm from "@/src/app/contact/compoments/contactform";
+import Banner from "@/src/app/contact-us/compoments/banner";
+import ContactForm from "@/src/app/contact-us/compoments/contactform";
 import Testimonials from "@/src/app/home/testimonials";
 import Faqs from "@/src/app/home/faq";
 
-import { list, BannerData } from "@/src/app/contact/data/data";
+import { list, BannerData } from "@/src/app/contact-us/data/data";
 
 import { ClientsReview } from "@/src/app/home/data/data";
 

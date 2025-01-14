@@ -2,20 +2,20 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "Expert CGI and VFX Services | Stunning Visual Effects",
+  title: "CGI & VFX Services - Video Animation",
   description: "Enhance your visual storytelling with our CGI and VFX services. We deliver high-quality animations and effects that captivate and engage your audience.",
   //===== OG Tags =====
   openGraph: {
-    title: "Expert CGI and VFX Services | Stunning Visual Effects",
+    title: "CGI & VFX Services - Video Animation",
     description: "Enhance your visual storytelling with our CGI and VFX services. We deliver high-quality animations and effects that captivate and engage your audience.",
-    url: '/cgi-and-vfx',
+    url: 'https://videoanimation.us/cgi-and-vfx-services',
     siteName: 'Video Animations',
     locale: 'en_US',
     type: 'website',
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: '/cgi-and-vfx' },
+  alternates: { canonical: 'https://videoanimation.us/cgi-and-vfx-services' },
 }
 
 

@@ -76,6 +76,82 @@ export default function Home() {
           }),
         }}
       />
+
+      {/* Professional Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "ProfessionalService",
+            name: "Video Animation Studio - Official Site",
+            image: "",
+            "@id": "",
+            url: "https://videoanimation.us/",
+            telephone: "+1 (716) 300-1135",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "111 N Orange Ave Suite 800",
+              addressLocality: "Orlando",
+              addressRegion: "FL",
+              postalCode: "32801",
+              addressCountry: "US",
+            },
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: 28.5442702,
+              longitude: -81.37963769999999,
+            },
+            openingHoursSpecification: {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday",
+              ],
+              opens: "00:00",
+              closes: "23:59",
+            },
+            sameAs: [
+              "https://www.facebook.com/videoanimationus",
+              "https://www.x.com/vid_animationus",
+              "https://www.instagram.com/videoanimationus",
+              "https://www.youtube.com/@VideoAnimationStudio",
+              "https://www.linkedin.com/company/video-animation-us",
+              "https://www.pinterest.com/animationvideous/",
+              "https://videoanimation.us/",
+            ],
+          }),
+        }}
+      />
+
+      {/* Product Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            name: "Video Animation Studio - Official Site",
+            image: "",
+            description:
+              "The official site of Animation Studios. Transform your ideas into stunning animations with our video animation company. We responsible for creating some of the most beloved films and animations ever made.",
+            brand: {
+              "@type": "Brand",
+              name: "Video Animation Studio",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              ratingCount: "2091",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

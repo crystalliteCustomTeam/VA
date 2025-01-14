@@ -2,7 +2,7 @@
 import { BannerData, ProcessContent, ProcessList, ImageCtaContent, FaqList } from "@/src/app/video-editing/data/data";
 import { slides, options, ClientsReview, WhyItems, WhyOption } from "@/src/app/home/data/data";
 
-import BannerClients from "@/src/app/about/bannerclients";
+import BannerClients from "@/src/app/about-us/bannerclients";
 import Banner from "@/src/app/services/banner";
 import Portfolio from "@/src/app/home/portfolio";
 import KeyPoints from "@/src/app/home/keypoints";

@@ -19,9 +19,9 @@ export const subMenuItems = [
     { label: "Whiteboard Animation", path: "/whiteboard-animation" },
     { label: "Video Editing", path: "/video-editing" },
     { label: "Logo Animation", path: "/logo-animation" },
-    { label: "CGI-VFX", path: "/cgi-and-vfx" },
-    { label: "Infographics", path: "/infographics" },
+    { label: "CGI-VFX", path: "/cgi-and-vfx-services" },
+    { label: "Infographics", path: "/infographics-designs" },
     { label: "Cel Animation", path: "/cel-animation" },
     { label: "Hybrid Animation", path: "/hybrid-animation" },
-    { label: "Architectural Visualization", path: "/architectural-visualization" },
+    { label: "Architectural Visualization", path: "/3d-architectural-animation" },
 ];

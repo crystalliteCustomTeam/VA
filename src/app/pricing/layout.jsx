@@ -1,10 +1,13 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "Video Animation Pricing",
-  description: "Discover our straightforward and competitive pricing options, designed to cater to your specific needs. Explore the value we bring to every budget.",
+  title: "Feel Free To Contact Us – Video Animation ",
+  description:
+    "Get in touch with us to learn more about our offers or ask any questions. We're here for you.",
+  //===== Canonical =====
+  alternates: { canonical: "https://videoanimation.us/pricing" },
 }
 
 export default function RootLayout({ children }) {
-  return (children);
+  return children
 }

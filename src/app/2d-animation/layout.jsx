@@ -2,20 +2,20 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "Professional 2D Animation Services | 2d Animation Studio",
-  description: "Our expert 2d animators craft engaging, fluid animations with expressive characters and vibrant visuals, perfect for your brand or project. Get professional 2D animation today!",
+  title: "2D Animation Services - Video Animation",
+  description: "Video Animation Studio is your one-stop shop for professional 2D animation services. Our expert 2D animators craft engaging, fluid animations with expressive characters and vibrant visuals, perfect for your brand or project.",
   //===== OG Tags =====
   openGraph: {
-    title: "Professional 2D Animation Services | 2d Animation Studio",
-    description: "Our expert 2d animators craft engaging, fluid animations with expressive characters and vibrant visuals, perfect for your brand or project. Get professional 2D animation today!",
-    url: '/2d-animation',
-    siteName: 'Video Animations',
+    title: "2D Animation Services - Video Animation",
+    description: "Video Animation Studio is your one-stop shop for professional 2D animation services. Our expert 2D animators craft engaging, fluid animations with expressive characters and vibrant visuals, perfect for your brand or project.",
+    url: 'https://videoanimation.us/2d-animation',
+    siteName: 'Video Animation',
     locale: 'en_US',
     type: 'website',
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: '/2d-animation' },
+  alternates: { canonical: 'https://videoanimation.us/2d-animation' },
 }
 
 

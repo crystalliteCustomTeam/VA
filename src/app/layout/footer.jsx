@@ -31,7 +31,7 @@ const QuickLinks = [
   },
   {
     name: "Contact Us",
-    url: "/contact",
+    url: "/contact-us",
   },
 ]
 

@@ -2,20 +2,20 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "Top 3D Animation Agency | Creative 3D Animation Services",
-  description: "Bring your vision to life with our expert 3D animation agency. We craft stunning visuals, immersive environments, and dynamic characters. Get started today!",
+  title: "3D Animation Services - Video Animation",
+  description: "Video Animation Studio is your one-stop shop for professional 3D animation services. Get premium 3D Animation Services that bring your imagination to life We craft stunning visuals, immersive environments, and dynamic characters.",
   //===== OG Tags =====
   openGraph: {
-    title: "Top 3D Animation Agency | Creative 3D Animation Services",
-    description: "Bring your vision to life with our expert 3D animation agency. We craft stunning visuals, immersive environments, and dynamic characters. Get started today!",
-    url: '/3d-animation',
-    siteName: 'Video Animations',
+    title: "3D Animation Services - Video Animation",
+    description: "Video Animation Studio is your one-stop shop for professional 3D animation services. Get premium 3D Animation Services that bring your imagination to life We craft stunning visuals, immersive environments, and dynamic characters.",
+    url: 'https://videoanimation.us/3d-animation',
+    siteName: 'Video Animation',
     locale: 'en_US',
     type: 'website',
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: '/3d-animation' },
+  alternates: { canonical: 'https://videoanimation.us/3d-animation' },
 }
 
 

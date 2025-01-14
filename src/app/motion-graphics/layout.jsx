@@ -2,20 +2,20 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "Motion Graphics & Design Services | Professional Studio",
-  description: "Bring your ideas to life with our motion graphics design services. We create dynamic, visually stunning animations that captivate and engage your audience.",
+  title: "Motion Graphics Services - Video Animation",
+  description: "Video Animation Studio providing Motion Graphics and Design Services. Discover the art of visual storytelling. Explore our professional services to create captivating 2D and 3D motion graphics Services. ",
   //===== OG Tags =====
   openGraph: {
-    title: "Motion Graphics & Design Services | Professional Studio",
-    description: "Bring your ideas to life with our motion graphics design services. We create dynamic, visually stunning animations that captivate and engage your audience.",
-    url: '/motion-graphics',
-    siteName: 'Video Animations',
+    title: "Motion Graphics Services - Video Animation",
+    description: "Video Animation Studio providing Motion Graphics and Design Services. Discover the art of visual storytelling. Explore our professional services to create captivating 2D and 3D motion graphics Services. ",
+    url: 'https://videoanimation.us/motion-graphics',
+    siteName: 'Video Animation',
     locale: 'en_US',
     type: 'website',
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: '/motion-graphics' },
+  alternates: { canonical: 'https://videoanimation.us/motion-graphics' },
 }
 
 
