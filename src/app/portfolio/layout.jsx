@@ -2,20 +2,20 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "Video Animation Portfolio",
-  description: "Visit our animation portfolio of award-winning work: whiteboard animation, 2D animation, 3D animation, and motion graphics.",
+  title: "Our Work - Video Animation Portfolio",
+  description: "Look at our portfolio of excellence and see the videos of our amazing projects we've created at Video Animation Studio.",
   //===== OG Tags =====
   openGraph: {
-    title: "Video Animation Portfolio",
-    description: "Visit our animation portfolio of award-winning work: whiteboard animation, 2D animation, 3D animation, and motion graphics.",
-    url: '/porfolio',
+    title: "Our Work - Video Animation Portfolio",
+    description: "Look at our portfolio of excellence and see the videos of our amazing projects we've created at Video Animation Studio.",
+    url: ':https://videoanimation.us/portfolio',
     siteName: 'Video Animations',
     locale: 'en_US',
     type: 'website',
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: '/porfolio' },
+  alternates: { canonical: ':https://videoanimation.us/portfolio' },
 }
 
 

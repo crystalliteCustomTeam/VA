@@ -2,12 +2,12 @@
 //===== Meta Data =====
 export const metadata = {
   //===== Meta Tags =====
-  title: "Top Architectural Visualization Company | 3D Experts",
-  description: "Elevate your projects with realistic 3D visualizations. Our architectural visualization company creates detailed renderings for impactful presentations.",
+  title: "3D Architectural Animation Services - Video Animation",
+  description: "Elevate your projects with realistic 3D Architectural Animation Services. Our architectural visualization animations create detailed renderings for impactful presentations. Transform ideas into captivating visual experiences. Discover innovation in motion.",
   //===== OG Tags =====
   openGraph: {
-    title: "Top Architectural Visualization Company | 3D Experts",
-    description: "Elevate your projects with realistic 3D visualizations. Our architectural visualization company creates detailed renderings for impactful presentations.",
+    title: "3D Architectural Animation Services - Video Animation",
+    description: "Elevate your projects with realistic 3D Architectural Animation Services. Our architectural visualization animations create detailed renderings for impactful presentations. Transform ideas into captivating visual experiences. Discover innovation in motion.",
     url: 'https://videoanimation.us/3d-architectural-animation',
     siteName: 'Video Animations',
     locale: 'en_US',
