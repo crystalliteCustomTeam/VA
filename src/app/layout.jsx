@@ -37,8 +37,8 @@ export const metadata = {
   },
   //===== No-Index =====
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 }
 
