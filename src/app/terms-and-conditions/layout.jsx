@@ -1,12 +1,12 @@
 //===== Meta Data =====
 export const metadata = {
     //===== Meta Tags =====
-    title: "",
-    description: "",
+    title: "Terms and Conditions - Video Animation",
+    description: "Our Terms & Conditions state simple and clear terms that the client/visitor must agree to before establishing the working relationship.",
     //===== OG Tags =====
     openGraph: {
-        title: "",
-        description: "",
+        title: "Terms and Conditions - Video Animation",
+        description: "Our Terms & Conditions state simple and clear terms that the client/visitor must agree to before establishing the working relationship.",
         url: '/terms-and-conditions',
         siteName: 'Video Animations',
         locale: 'en_US',

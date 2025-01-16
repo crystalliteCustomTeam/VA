@@ -26,7 +26,11 @@ export const metadata = {
   },
   // Canonical
   alternates: {
-    canonical: "https://videoanimation.us/",
+    canonical: "/",
+    languages: {
+      "x-default": "https://videoanimation.us/ ",
+      "en-US": "https://www.videoanimation.us/",
+    },
   },
   other: {
     "DC.title": "Video Animation Studio - Official Site",

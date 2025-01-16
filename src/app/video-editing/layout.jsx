@@ -16,7 +16,21 @@ export const metadata = {
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: "https://videoanimation.us/video-editing" },
+  alternates: {
+    canonical: "/video-editing",
+    languages: {
+      "x-default": "https://videoanimation.us/video-editing",
+      "en-US": "https://www.videoanimation.us/video-editing",
+    },
+  },
+  other: {
+    "DC.title":
+      "Video Editing Animation Services - Video Animation Company USA",
+    "geo.region": ["US-FL", "US-TX"],
+    "geo.placename": ["Orlando", "Austin"],
+    "geo.position": ["28.542111;-81.37903", "30.271129;-97.743699"],
+    ICBM: ["28.542111, -81.37903", "30.271129, -97.743699"],
+  },
 }
 
 export default function RootLayout({ children }) {

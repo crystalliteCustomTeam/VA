@@ -15,7 +15,7 @@ export const metadata = {
     images: "",
   },
   //===== Canonical =====
-  alternates: { canonical: 'https://videoanimation.us/contact-us' },
+  alternates: { canonical: '/contact-us' },
 }
 
 
