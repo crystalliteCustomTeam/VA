@@ -6,6 +6,7 @@ import Image from 'next/image';
 import IMG from "media/home/testimonial/testimonialImg.webp";
 import useEmblaCarousel from 'embla-carousel-react';
 import { Pause, Play, SilderArrows } from '@/src/app/app-constants';
+import CTA from '@/src/components/CTA/CTA';
 
 const Testimonials = (props) => {
     const { slides, options } = props;
@@ -89,6 +90,11 @@ const Testimonials = (props) => {
                                 </div>
                             </div>
                         </section>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs="12">
+                    <CTA css="justify-content-center mt-5" color={true}/>
                     </Col>
                 </Row>
             </Container>

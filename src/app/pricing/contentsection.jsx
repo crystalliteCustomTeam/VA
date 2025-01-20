@@ -4,6 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import CommonButton from "@/src/app/home/components/commonbutton"
 import ContentImg1 from '@/public/pricing/contectsection/ContentImg1.gif'
 import Image from 'next/image';
+import CTA from '@/src/components/CTA/CTA';
 
 
 export default function Contentsection() {
@@ -14,7 +15,7 @@ export default function Contentsection() {
                     <Col md={6} className='my-auto'>
                         <h2>Want to Jump  Straight in & Get the Video Made?</h2>
                         <p>Want to get the right kind of video made? One that ensures that your brand objectives are met? One that spurs the customer into taking action? If yes, then you’re just a few steps away from getting a video like this. So, let’s get Video Animation, shall we?</p>
-                        <CommonButton />
+                        <CTA color={true}/>
                     </Col>
                     <Col md={6} className='my-auto text-center'>
                         <Image src={ContentImg1} width={500} height={600} alt='Image' />

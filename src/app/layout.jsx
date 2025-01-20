@@ -4,6 +4,7 @@ import "@/src/app/globals.scss"
 import Header from "@/src/app/layout/header"
 import Footer from "@/src/app/layout/footer"
 import Scripts from "./Scripts"
+import SidebarCTA from "../components/Sidebar"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
       <body className={poppins.className}>
         <Scripts />
         <Header />
+        <SidebarCTA/>
         {children}
         <Footer />
       </body>

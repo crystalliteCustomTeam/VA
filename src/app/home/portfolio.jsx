@@ -8,6 +8,7 @@ import { FavIcon } from '@/src/app/app-constants';
 import axios from 'axios';
 import VideoModal from '@/src/app/home/components/videomodal';
 import Autoplay from 'embla-carousel-autoplay'
+import CTA from '@/src/components/CTA/CTA';
 
 const OPTIONS = { align: 'center', loop: true };
 const autoplayOptions = { delay: 2000 };
@@ -163,6 +164,11 @@ const Portfolio = () => {
                                 )}
                             </>
                         )}
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs="12">
+                    <CTA css="justify-content-center mt-5" color={true}/>
                     </Col>
                 </Row>
             </Container>

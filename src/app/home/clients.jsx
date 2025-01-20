@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "@/styles/home/clients.module.scss";
 import useEmblaCarousel from 'embla-carousel-react';
 import AutoScroll from 'embla-carousel-auto-scroll';
+import CTA from "@/src/components/CTA/CTA";
 
 const Clients = ({ ClientsLogos }) => {
     const [emblaRefClients] = useEmblaCarousel(
@@ -40,10 +41,13 @@ const Clients = ({ ClientsLogos }) => {
     return (
         <section className={`${styles.clientsSection} p-100`}>
             <Container>
-                <Row>
+                <Row className="align-items-center">
                     <Col md={6}>
                         <h2>Clients</h2>
                         <p>Our animation services have earned the trust of leading global brands, delivering impactful results that drive success worldwide.</p>
+                    </Col>
+                    <Col md={6}>
+                    <CTA css="justify-content-md-end mt-0" color={true}/>
                     </Col>
                 </Row>
                 <Row>

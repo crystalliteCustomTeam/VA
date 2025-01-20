@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "@/styles/services/process.module.scss";
 import { Col, Container, Row } from 'react-bootstrap';
+import CTA from '@/src/components/CTA/CTA';
 
 export default function Process({ data, list }) {
     return (
@@ -22,6 +23,11 @@ export default function Process({ data, list }) {
                             </div>
                         </Col>
                     ))}
+                </Row>
+                <Row>
+                    <Col xs="12">
+                    <CTA css="justify-content-center mt-4" color={true}/>
+                    </Col>
                 </Row>
             </Container>
         </section>

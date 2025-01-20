@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import styles from "@/styles/home/videocta.module.scss";
 import CommonButton from "@/src/app/home/components/commonbutton"
+import CTA from '@/src/components/CTA/CTA';
 
 
 const VideoCta = () => {
@@ -43,8 +44,7 @@ const VideoCta = () => {
                     <Col lg={10} className='m-auto text-center'>
                         <div className={styles.videoContent}>
                             <h2>Make Your Brand Stand Out</h2>
-                            <CommonButton />
-
+                    <CTA css="justify-content-center mt-4"/>
                         </div>
                     </Col>
                 </Row>

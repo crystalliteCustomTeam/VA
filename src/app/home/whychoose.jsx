@@ -5,7 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "@/styles/home/whychoose.module.scss";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowBtn } from "@/src/app/app-constants";
+import { ArrowBtn, FooterPhone } from "@/src/app/app-constants";
 import Link from "next/link";
 import Autoplay from 'embla-carousel-autoplay'
 
@@ -84,9 +84,14 @@ const WhyChooes = (props) => {
                             <div className={styles.whyChooesBox}>
                                 <h5>{currentSlide.title}</h5>
                                 <p>{currentSlide.txt}</p>
-                                <Link href={currentSlide.link} className="">
+                                <div className="d-flex align-items-center justify-content-center gap-4">
+                                <Link href="javascript:void(Tawk_API.toggle())">
                                     Let’s Discuss <ArrowBtn />
                                 </Link>
+                                <Link href="tel:7163001135" className="d-flex align-items-center gap-3">
+                                <FooterPhone /> Call Now
+                                </Link>
+                                </div>
                             </div>
                         </div>
                     </Col>

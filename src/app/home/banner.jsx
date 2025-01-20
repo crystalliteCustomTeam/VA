@@ -4,7 +4,7 @@ import styles from "@/styles/home/banner.module.scss"
 import Head from "next/head"
 import CommonButton from "@/src/app/home/components/commonbutton"
 import RoundBtn from "@/src/app/home/components/roundbtn"
-
+import CTA from "@/src/components/CTA/CTA"
 
 
 const Banner = ({ BannerData }) => {
@@ -21,7 +21,7 @@ const Banner = ({ BannerData }) => {
                             <div className={styles.bannerContentBox}>
                                 <div className={styles.bannerHeading}>
                                     <h1>{BannerData?.title}</h1>
-                                    <CommonButton />
+                                    <CTA/>
 
                                 </div>
                                 <div className={styles.bannerButton}>

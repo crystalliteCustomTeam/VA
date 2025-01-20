@@ -3,6 +3,7 @@ import styles from "@/styles/services/banner.module.scss"
 import CommonButton from "@/src/app/home/components/commonbutton"
 import RoundBtn from "@/src/app/home/components/roundbtn"
 import Head from 'next/head'
+import CTA from '@/src/components/CTA/CTA'
 
 const Banner = ({ video, BannerData }) => {
     return (
@@ -17,7 +18,7 @@ const Banner = ({ video, BannerData }) => {
                             <div className={styles.bannerContent}>
                                 <h1>{BannerData?.title}</h1>
                                 <p>{BannerData?.desc}</p>
-                                <CommonButton />
+                                <CTA />
                             </div>
                         </Col>
                         <Col md={5} className='mt-md-auto mt-sm-0 ms-auto text-right'>

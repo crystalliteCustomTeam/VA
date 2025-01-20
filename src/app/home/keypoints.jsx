@@ -6,6 +6,7 @@ import ByNumber from "@/src/app/home/components/bynumber";
 import ByAwards from "@/src/app/home/components/byawards";
 import ByClients from "@/src/app/home/components/byclients";
 import ByPartner from "@/src/app/home/components/bypartner";
+import CTA from "@/src/components/CTA/CTA";
 
 const keyPointsData = [
     {
@@ -53,6 +54,11 @@ const KeyPoints = () => {
                                 {keyPointsData[activeIndex].content}
                             </div>
                         </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs="12">
+                    <CTA css="justify-content-center mt-5" color={true}/>
                     </Col>
                 </Row>
             </Container>

@@ -64,32 +64,27 @@ export const WhyItems = [
     {
         Img: why01.src,
         title: "Creative Solutions",
-        txt: "Our unique approach ensures your videos captivate audiences and leave a lasting impact, driving business success.",
-        link: "#"
+        txt: "Our unique approach ensures your videos captivate audiences and leave a lasting impact, driving business success."
     },
     {
         Img: why02.src,
         title: "Seamless Production Process",
-        txt: "Our dedicated team manages every aspect of your animation project, ensuring a smooth, hassle-free experience from start to finish.",
-        link: "#"
+        txt: "Our dedicated team manages every aspect of your animation project, ensuring a smooth, hassle-free experience from start to finish."
     },
     {
         Img: why03.src,
         title: "Exceptional Results",
-        txt: "Every video we produce is designed to create an immersive experience that resonates with your audience and achieves your goals.",
-        link: "#"
+        txt: "Every video we produce is designed to create an immersive experience that resonates with your audience and achieves your goals."
     },
     {
         Img: why04.src,
         title: "Proven Expertise",
-        txt: "With years of experience and a portfolio of successful projects, our team understands what it takes to make animations that get results.",
-        link: "#"
+        txt: "With years of experience and a portfolio of successful projects, our team understands what it takes to make animations that get results."
     },
     {
         Img: why05.src,
         title: "Client-Centric Approach",
-        txt: "Our goal is to exceed expectations by delivering animations that align perfectly with your brand and resonate with your audience.",
-        link: "#"
+        txt: "Our goal is to exceed expectations by delivering animations that align perfectly with your brand and resonate with your audience."
     },
 
 

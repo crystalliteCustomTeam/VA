@@ -6,6 +6,7 @@ import Link from "next/link"
 import Head from "next/head"
 import CommonButton from "@/src/app/home/components/commonbutton"
 import RoundBtn from "@/src/app/home/components/roundbtn"
+import CTA from "@/src/components/CTA/CTA"
 
 const Banner = ({ BannerData }) => {
     return (
@@ -21,7 +22,7 @@ const Banner = ({ BannerData }) => {
                                 <div className={styles.bannerHeading}>
                                     <h1>{BannerData?.title}</h1>
                                     {BannerData?.desc}
-                                    <CommonButton />
+                                    <CTA/>
                                 </div>
                                 <div className={styles.bannerButton}>
                                     <RoundBtn />
