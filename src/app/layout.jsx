@@ -5,6 +5,7 @@ import Header from "@/src/app/layout/header"
 import Footer from "@/src/app/layout/footer"
 import Scripts from "./Scripts"
 import SidebarCTA from "../components/Sidebar"
+import ConditionalLayout from "./ConditionalLayout"
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -51,11 +52,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Scripts />
-        <Header />
-        <SidebarCTA/>
-        {children}
-        <Footer />
+        <ConditionalLayout children={children} />
       </body>
     </html>
   )

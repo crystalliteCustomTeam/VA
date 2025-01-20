@@ -1,0 +1,8 @@
+.shadow {
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 0px 1px,
+    rgba(255, 255, 255, 0) 0px 4px 6px -3px,
+    rgba(255, 255, 255, 0) 0px 1px 0px inset;
+  background: -webkit-linear-gradient(-14deg, rgb(236, 1, 166) 0%, rgb(181, 13, 162) 49%, rgb(126, 24, 158) 100%);
+  border-radius: 10px;
+  overflow: hidden;
+}

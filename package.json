@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "embla-carousel": "8.3.0",
