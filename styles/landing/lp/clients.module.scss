@@ -1,0 +1,214 @@
+.embla {
+    width: 100%;
+    height: 100px;
+    padding: 15px 0px;
+    background: #F7F8F9;
+
+    .embla__viewport {
+        overflow: hidden;
+
+        .embla__container {
+            display: flex;
+            touch-action: pan-y pinch-zoom;
+            margin-left: calc(20px * -1);
+
+            .embla__slide {
+                transform: translate3d(0, 0, 0);
+                flex: 0 0 calc(100%/8 - 20px);
+                min-width: 0;
+                padding-left: 20px;
+
+                .imgBox {
+                    height: 75px;
+                    width: auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .embla {
+        height: 90px;
+        padding: 10px 0px;
+
+        .embla__viewport {
+
+            .embla__container {
+                margin-left: calc(20px * -1);
+
+                .embla__slide {
+                    flex: 0 0 calc(100%/6 - 20px);
+                    padding-left: 20px;
+
+                    .imgBox {
+                        height: 70px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+    .embla {
+        height: 90px;
+        padding: 10px 0px;
+
+        .embla__viewport {
+
+            .embla__container {
+                margin-left: calc(20px * -1);
+
+                .embla__slide {
+                    flex: 0 0 calc(100%/6 - 20px);
+                    padding-left: 20px;
+
+                    .imgBox {
+                        height: 70px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+    .embla {
+        height: 80px;
+        padding: 10px 0px;
+
+        .embla__viewport {
+
+            .embla__container {
+                margin-left: calc(20px * -1);
+
+                .embla__slide {
+                    flex: 0 0 calc(100%/6 - 20px);
+                    padding-left: 20px;
+
+                    .imgBox {
+                        height: 60px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width:1099px) {
+    .embla {
+        height: 80px;
+        padding: 10px 0px;
+
+        .embla__viewport {
+
+            .embla__container {
+                margin-left: calc(20px * -1);
+
+                .embla__slide {
+                    flex: 0 0 calc(100%/5 - 20px);
+                    padding-left: 20px;
+
+                    .imgBox {
+                        height: 60px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:899px) {
+    .embla {
+        height: 70px;
+        padding: 10px 0px;
+
+        .embla__viewport {
+
+            .embla__container {
+                margin-left: calc(0px * -1);
+
+                .embla__slide {
+                    flex: 0 0 calc(100%/5 - 0px);
+                    padding-left: 0px;
+
+                    .imgBox {
+                        height: 50px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width:767px) {
+    .embla {
+        height: 70px;
+        padding: 10px 0px;
+
+        .embla__viewport {
+
+            .embla__container {
+                margin-left: calc(0px * -1);
+
+                .embla__slide {
+                    flex: 0 0 calc(100%/5 - 0px);
+                    padding-left: 0px;
+
+                    .imgBox {
+                        height: 50px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+    .embla {
+        height: 80px;
+        padding: 10px 0px;
+
+        .embla__viewport {
+
+            .embla__container {
+                margin-left: calc(0px * -1);
+
+                .embla__slide {
+                    flex: 0 0 calc(100%/3 - 0px);
+                    padding-left: 0px;
+
+                    .imgBox {
+                        height: 60px;
+                        width: auto;
+
+                    }
+                }
+            }
+
+        }
+
+    }
+}

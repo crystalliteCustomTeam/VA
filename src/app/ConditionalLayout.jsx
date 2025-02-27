@@ -8,7 +8,7 @@ import Scripts from "./Scripts"
 const ConditionalLayout = ({ children }) => {
   const pathname = usePathname()
 
-  const noHeaderFooterPaths = ["/explainer-animated-videos"]
+  const noHeaderFooterPaths = ["/explainer-animated-videos", "/landing/lp1"]
 
   const shouldHideHeaderFooter = noHeaderFooterPaths.some((path) =>
     pathname.startsWith(path)

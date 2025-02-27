@@ -1,0 +1,203 @@
+.contentBox {
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    .ulDesign {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 50px;
+
+        li {
+            flex: 0 0 50%;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 40px;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.165px;
+            color: #73858F;
+
+            svg {
+                flex: 0 0 25px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .contentBox {
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .ulDesign {
+            li {
+                font-size: 16px;
+                line-height: 35px;
+
+                svg {
+                    flex: 0 0 20px;
+                    margin-right: 10px;
+                    height: 18px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1399px) {
+    .contentBox {
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .ulDesign {
+            padding-left: 50px;
+
+            li {
+                font-size: 15px;
+                line-height: 35px;
+
+                svg {
+                    flex: 0 0 20px;
+                    margin-right: 10px;
+                    height: 17px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1299px) {
+    .contentBox {
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .ulDesign {
+            padding-left: 0px;
+
+            li {
+                font-size: 14px;
+                line-height: 32px;
+
+                svg {
+                    flex: 0 0 20px;
+                    margin-right: 5px;
+                    height: 16px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width:1099px) {
+    .contentBox {
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .ulDesign {
+            padding-left: 100px;
+
+            li {
+                flex: 0 0 100%;
+                font-size: 14px;
+                line-height: 28px;
+
+                svg {
+                    flex: 0 0 20px;
+                    margin-right: 5px;
+                    height: 16px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:899px) {
+    .contentBox {
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .ulDesign {
+            padding-left: 50px;
+
+            li {
+                flex: 0 0 100%;
+                font-size: 14px;
+                line-height: 28px;
+
+                svg {
+                    flex: 0 0 20px;
+                    margin-right: 5px;
+                    height: 16px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width:767px) {
+    .contentBox {
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .ulDesign {
+            margin-top: 20px;
+            padding-left: 0px;
+
+            li {
+                flex: 0 0 100%;
+                font-size: 14px;
+                line-height: 28px;
+
+                svg {
+                    flex: 0 0 20px;
+                    margin-right: 5px;
+                    height: 16px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+    .contentBox {
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        .ulDesign {
+            margin-top: 20px;
+            padding-left: 0px;
+
+            li {
+                flex: 0 0 100%;
+                font-size: 15px;
+                line-height: 30px;
+
+                svg {
+                    flex: 0 0 20px;
+                    margin-right: 5px;
+                    height: 16px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}

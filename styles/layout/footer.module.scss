@@ -294,6 +294,10 @@
     .CopyRightBox {
       display: flex;
 
+      &.centerTxt {
+        justify-content: center;
+      }
+
       .txtCopyRight {
         font-style: normal;
         font-weight: 400;

@@ -1,5 +1,5 @@
 "use client"
-import { ArrowBtn, LiveChatIcon } from "@/src/app/app-constants"
+import { ArrowBtn, LiveChatIcon, ChatIcon } from "@/src/app/app-constants"
 import VideoModal from "@/src/app/home/components/videomodal"
 import { useState } from "react"
 import styles from "./style.module.scss"
@@ -26,7 +26,7 @@ const CTA = ({ css, color, LiveChat = true }) => {
           </div>
           <div className={`readMoreBtn ${color ? "bgColor" : ""}`}>
             <a href="javascript:void(Tawk_API.toggle())">
-              <span>Live Chat</span> <LiveChatIcon />
+              <span>Live Chat</span> <ChatIcon />
             </a>
           </div>
         </div>
