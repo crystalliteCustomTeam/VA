@@ -55,7 +55,7 @@ export const ContentBox1 = {
         <p>Our Animators specialize in creating vibrant and captivating animations and visual effects that bring characters and stories to life. Whether it’s for commercials, explainer videos, or entertainment, our animations are designed to engage and inspire your audience. With Video Animations, you get top-notch quality and creativity that stands out in the competitive landscape of animation studios in NYC.</p>
     </>),
     image: IMG01.src,
-    video: ""
+    video: "https://player.vimeo.com/progressive_redirect/playback/1025440805/rendition/1080p/file.mp4?loc=external&signature=81f489c58586ce519b6331e8b84a07d83c4257a29cf6c856a79e666faad9e958"
 }
 
 import IMG02 from "media/landing/lp/Image02.webp"
@@ -68,7 +68,7 @@ export const ContentBox2 = {
         <p>Watch Randy Biddle as he dissects how exactly an explainer video production company can help you achieve that.</p>
     </>),
     image: IMG02.src,
-    video: ""
+    video: "https://player.vimeo.com/progressive_redirect/playback/1025440805/rendition/1080p/file.mp4?loc=external&signature=81f489c58586ce519b6331e8b84a07d83c4257a29cf6c856a79e666faad9e958",
 }
 import IMG03 from "media/landing/lp/Image04.webp"
 export const ContentBox3 = {
@@ -79,7 +79,8 @@ export const ContentBox3 = {
         <p>By providing flexibility where it’s needed most, the AS: Creative suite helps marketers to balance the need for thoughtful branding and seemingly endless content created quickly and cost-effectively via ultra-efficient processes, connected technologies and a global network of highly skilled teams.</p>
     </>),
     image: IMG03.src,
-    video: ""
+    video: "https://player.vimeo.com/progressive_redirect/playback/1025440805/rendition/1080p/file.mp4?loc=external&signature=81f489c58586ce519b6331e8b84a07d83c4257a29cf6c856a79e666faad9e958",
+
 }
 
 import IMG04 from "media/landing/lp/Image05.webp"
@@ -90,7 +91,8 @@ export const ContentBox4 = {
         <p>Our Animators specialize in creating vibrant and captivating animations and visual effects that bring characters and stories to life. Whether it’s for commercials, explainer videos, or entertainment, our animations are designed to engage and inspire your audience. With Video Animations, you get top-notch quality and creativity that stands out in the competitive landscape of animation studios in NYC.</p>
     </>),
     image: IMG04.src,
-    video: ""
+    video: "https://player.vimeo.com/progressive_redirect/playback/1025440805/rendition/1080p/file.mp4?loc=external&signature=81f489c58586ce519b6331e8b84a07d83c4257a29cf6c856a79e666faad9e958",
+
 }
 
 export const ProcessContent = {
@@ -126,7 +128,8 @@ export const ContentBox01 = {
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </>),
     image: IMG1.src,
-    video: ""
+    video: "https://player.vimeo.com/progressive_redirect/playback/1025440805/rendition/1080p/file.mp4?loc=external&signature=81f489c58586ce519b6331e8b84a07d83c4257a29cf6c856a79e666faad9e958",
+
 }
 
 import IMG2 from "media/landing/lp/Image05.webp"
@@ -137,7 +140,8 @@ export const ContentBox02 = {
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </>),
     image: IMG2.src,
-    video: ""
+    video: "https://player.vimeo.com/progressive_redirect/playback/1025440805/rendition/1080p/file.mp4?loc=external&signature=81f489c58586ce519b6331e8b84a07d83c4257a29cf6c856a79e666faad9e958",
+
 }
 
 
@@ -149,5 +153,6 @@ export const ContentBox03 = {
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </>),
     image: IMG3.src,
-    video: ""
+    video: "https://player.vimeo.com/progressive_redirect/playback/1025440805/rendition/1080p/file.mp4?loc=external&signature=81f489c58586ce519b6331e8b84a07d83c4257a29cf6c856a79e666faad9e958",
+
 }
