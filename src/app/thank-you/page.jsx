@@ -17,7 +17,7 @@ export default function page() {
                 <div className={styles.bannerHeading}>
                   <h1>Thank You</h1>
                   <p>Our team is reviewing your details and will get back to you shortly. If you want to explore more about what we do or just want to know a bit more, feel free to take a look around!</p>
-                  <Link href="/" className="readMoreBtn">Back to Home <ArrowBtn /></Link>
+                  <Link href="/" className="readMoreBtn"><span className="thanks">Back to Home </span><ArrowBtn /></Link>
                 </div>
               </div>
             </Col>

@@ -64,21 +64,20 @@ const ContactPageFrom = () => {
         const currentdate = new Date().toLocaleString();
         const data = {
             page_url: pagenewurl,
-            user_ip: ip.ip || '', // Extract only the IP string
+            user_ip: ip.ip || '', 
             lead_data: {
                 name,
                 email,
                 phone,
                 message,
-                checkboxes: selectedAnimations // Use selectedAnimations instead of checkboxes
+                checkboxes: selectedAnimations 
             }
         };
 
         const JSONdata = JSON.stringify(data);
 
         try {
-            // Prepare and send the fetch request as you have done
-            let headersList = {
+              let headersList = {
                 "Accept": "*/*",
                 "User-Agent": "Thunder Client (https://www.thunderclient.com)",
                 "Authorization": "Bearer ke2br2ubssi4l8mxswjjxohtd37nzexy042l2eer",

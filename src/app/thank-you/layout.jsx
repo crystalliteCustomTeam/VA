@@ -16,6 +16,10 @@ export const metadata = {
   },
   //===== Canonical =====
   alternates: { canonical: '/thank-you' },
+  robots: {
+    index: false,
+    follow: false,
+  },
 }
 
 
