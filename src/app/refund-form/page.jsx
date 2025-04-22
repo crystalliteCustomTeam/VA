@@ -266,8 +266,8 @@ export default function RefundFrom() {
                 </p>
                 <p>
                   <strong>Email: </strong>{" "}
-                  <a href="mailto:finance@infinitimediainc.com">
-                    finance@infinitimediainc.com
+                  <a href="mailto:queries@videoanimation.us">
+                  queries@videoanimation.us.
                   </a>
                 </p>
               </div>
