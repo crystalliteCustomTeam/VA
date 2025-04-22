@@ -156,8 +156,8 @@ export default function RefundFrom() {
               <p>
                 <i>
                   *** Fill out the refund form or email it to{" "}
-                  <a href="mailto:finance@infinitimediainc.com">
-                    finance@infinitimediainc.com.
+                  <a href="mailto:queries@videoanimation.us">
+                  queries@videoanimation.us.
                   </a>{" "}
                   ***
                 </i>
