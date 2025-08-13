@@ -93,7 +93,7 @@ export default function Page() {
             image: "",
             "@id": "",
             url: "https://videoanimation.us/video-editing",
-            telephone: "+1 (716) 300-1135",
+            telephone: "+1 (833) 666-6684",
             address: {
               "@type": "PostalAddress",
               streetAddress: "111 N Orange Ave Suite 800",

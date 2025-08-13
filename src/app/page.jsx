@@ -88,7 +88,7 @@ export default function Home() {
             image: "",
             "@id": "",
             url: "https://videoanimation.us/",
-            telephone: "+1 (716) 300-1135",
+            telephone: "+1 (833) 666-6684",
             address: {
               "@type": "PostalAddress",
               streetAddress: "111 N Orange Ave Suite 800",

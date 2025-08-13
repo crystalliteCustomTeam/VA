@@ -137,7 +137,7 @@ const Footer = () => {
                     <div className={styles.contactInfo} target="_blank">
                       <a href="tel:7163001135">
                         <FooterPhone />
-                        (716) 300-1135
+                        (833) 666-6684
                       </a>
                     </div>
                     <div className={styles.contactInfo}>
