@@ -76,7 +76,7 @@ const Services = () => {
                                     >
                                         <h4><Polygon />{service.title}</h4>
                                         <p>{service.description}</p>
-                                        <Link href="javascript:void(Tawk_API.toggle())">
+                                        <Link href="javascript:parent.LC_API.open_chat_window();">
                                             Let’s Discuss <ArrowBtn />
                                         </Link>
                                     </li>

@@ -35,7 +35,7 @@ const HeaderLp = () => {
                                 <a href="tel:7163001135" ><PhoneIcon />(833) 666-6684</a>
                             </div>
                             <div className={styles.chatNow}>
-                                <a href="javascript:void(Tawk_API.toggle())"><ChatIcon />Chat Now</a>
+                                <a href="javascript:parent.LC_API.open_chat_window();"><ChatIcon />Chat Now</a>
                             </div>
                         </div>
                     </Col>

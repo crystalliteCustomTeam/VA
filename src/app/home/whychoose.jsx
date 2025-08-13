@@ -85,7 +85,7 @@ const WhyChooes = (props) => {
                                 <h5>{currentSlide.title}</h5>
                                 <p>{currentSlide.txt}</p>
                                 <div className="d-flex align-items-center justify-content-center gap-4">
-                                <Link href="javascript:void(Tawk_API.toggle())">
+                                <Link href="javascript:parent.LC_API.open_chat_window();">
                                     Let’s Discuss <ArrowBtn />
                                 </Link>
                                 <Link href="tel:7163001135" className="d-flex align-items-center gap-3">

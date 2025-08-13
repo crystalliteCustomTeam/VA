@@ -25,7 +25,7 @@ const CTA = ({ css, color, LiveChat = true }) => {
             </div>
           </div>
           <div className={`readMoreBtn ${color ? "bgColor" : ""}`}>
-            <a href="javascript:void(Tawk_API.toggle())">
+            <a href="javascript:parent.LC_API.open_chat_window();">
               <span>Live Chat</span> <ChatIcon />
             </a>
           </div>
