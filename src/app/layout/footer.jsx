@@ -150,9 +150,7 @@ const Footer = () => {
                       </a>
                     </div>
                     <div className={styles.contactAddress}>
-                      <div>
-                        <FooterPin />
-                      </div>
+                     
 
                     </div>
                     <div className={styles.contactAddress}>
