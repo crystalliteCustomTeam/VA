@@ -135,7 +135,7 @@ const Footer = () => {
                   >
                     <h6>Contact Info</h6>
                     <div className={styles.contactInfo} target="_blank">
-                      <a href="tel:7163001135">
+                      <a href="tel(833) 666-6684">
                         <FooterPhone />
                         (833) 666-6684
                       </a>
@@ -146,13 +146,10 @@ const Footer = () => {
                         target="_blank"
                       >
                         <FooterEmail />
-                        queries@videoanimation.us
+                      hello@videoanimation.us
                       </a>
                     </div>
-                    <div className={styles.contactAddress}>
-                     
-
-                    </div>
+                    
                     <div className={styles.contactAddress}>
                       <div>
                         <FooterPin />

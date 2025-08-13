@@ -88,7 +88,7 @@ const WhyChooes = (props) => {
                                 <Link href="javascript:parent.LC_API.open_chat_window();">
                                     Let’s Discuss <ArrowBtn />
                                 </Link>
-                                <Link href="tel:7163001135" className="d-flex align-items-center gap-3">
+                                <Link href="tel(833) 666-6684" className="d-flex align-items-center gap-3">
                                 <FooterPhone /> Call Now
                                 </Link>
                                 </div>

@@ -32,7 +32,7 @@ const HeaderLp = () => {
                     <Col xs={8} sm={8} md={6}>
                         <div className={styles.flexBtn}>
                             <div className={styles.phoneNumber}>
-                                <a href="tel:7163001135" ><PhoneIcon />(833) 666-6684</a>
+                                <a href="tel(833) 666-6684" ><PhoneIcon />(833) 666-6684</a>
                             </div>
                             <div className={styles.chatNow}>
                                 <a href="javascript:parent.LC_API.open_chat_window();"><ChatIcon />Chat Now</a>
