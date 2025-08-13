@@ -25,7 +25,7 @@ const SidebarCTA = () => {
         <span className="text-light">Get A Quote</span>
       </button>
       <div className={styles.phoneNumber}>
-        <a href="tel:800-253-1448">
+        <a href="tel:(833) 666-6684">
           <FooterPhone />
         </a>
       </div>
