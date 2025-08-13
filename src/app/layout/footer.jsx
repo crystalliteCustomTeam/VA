@@ -153,14 +153,7 @@ const Footer = () => {
                       <div>
                         <FooterPin />
                       </div>
-                      <div>
-                        <a
-                          href="https://maps.app.goo.gl/8G8pSQ15MPfJjmin9"
-                          target="_blank"
-                        >
-                          111 N Orange Ave Suite 800, Orlando, FL 32801
-                        </a>
-                      </div>
+
                     </div>
                     <div className={styles.contactAddress}>
                       <div>
@@ -168,10 +161,10 @@ const Footer = () => {
                       </div>
                       <div>
                         <a
-                          href="https://maps.app.goo.gl/EToqx3DmGpCrXLPD6"
+                          href="https://maps.app.goo.gl/hUvz9adNZ8CuCU5N6"
                           target="_blank"
                         >
-                          106 E 6th St suite 895, Austin, TX 78701
+                          389 Grand St, New York, NY 10002, United States
                         </a>
                       </div>
                     </div>
@@ -225,9 +218,8 @@ const Footer = () => {
         </Container>
       </section>
       <section
-        className={`${styles.animationsection} ${
-          activeClass ? styles.active : ""
-        }`}
+        className={`${styles.animationsection} ${activeClass ? styles.active : ""
+          }`}
       >
         <Container className="h-100">
           <Row className="h-100">

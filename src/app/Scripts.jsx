@@ -5,17 +5,7 @@ import { useEffect } from "react"
 const Scripts = () => {
   useEffect(() => {
     // Load Tawk.to chat script
-    const timer = setTimeout(() => {
-      if (typeof window !== "undefined") {
-        const tawkScript = document.createElement("script")
-        tawkScript.async = true
-        tawkScript.src =
-          "https://embed.tawk.to/677ef51949e2fd8dfe048301/1ih3uqqt4"
-        tawkScript.charset = "UTF-8"
-        tawkScript.setAttribute("crossorigin", "*")
-        document.body.appendChild(tawkScript)
-      }
-    }, 5000)
+    
     //======== Google Tag Manager ========//
     const gtmConfigScript1 = document.createElement("script")
     gtmConfigScript1.id = "google-tag-manager-one"
@@ -54,6 +44,37 @@ const Scripts = () => {
           send_to: "AW-10860906782/-cBLCMe7q54ZEJ6S8boo",
         })`}
       </Script>
+      <Script id="livechat-init" strategy="afterInteractive">
+            {`
+            window.__lc = window.__lc || {};
+            window.__lc.license = 19220066;
+            window.__lc.integration_name = "manual_onboarding";
+            window.__lc.product_name = "livechat";
+            (function(n,t,c){
+              function i(n){return e._h ? e._h.apply(null,n) : e._q.push(n)}
+              var e = {
+                _q: [], _h: null, _v: "2.0",
+                on: function(){i(["on", c.call(arguments)])},
+                once: function(){i(["once", c.call(arguments)])},
+                off: function(){i(["off", c.call(arguments)])},
+                get: function(){
+                  if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                  return i(["get", c.call(arguments)])
+                },
+                call: function(){i(["call", c.call(arguments)])},
+                init: function(){
+                  var n = t.createElement("script");
+                  n.async = true;
+                  n.type = "text/javascript";
+                  n.src = "https://cdn.livechatinc.com/tracking.js";
+                  t.head.appendChild(n);
+                }
+              };
+              !n.__lc.asyncInit && e.init();
+              n.LiveChatWidget = n.LiveChatWidget || e;
+            })(window, document, [].slice);
+          `}
+          </Script>
     </>
   )
 }
